@@ -13,4 +13,11 @@ class Bus:Vehicle
     var isServiceAvailable:Bool
     var   isWifiAvailable:Bool
     
+    //Initializer
+    init(busType:String,isServiceAvailable:Bool,isWIfiAvailable:Bool)
+    {
+        self.busType=busType
+        self.isWifiAvailable=isWIfiAvailable
+        self.isServiceAvailable=isServiceAvailable
+    }
 }
