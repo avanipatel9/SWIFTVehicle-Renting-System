@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		47409B2623F3A01F00A9EBE2 /* Vehicle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47409B2523F3A01F00A9EBE2 /* Vehicle.swift */; };
+		47409B2823F3A10700A9EBE2 /* Car.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47409B2723F3A10700A9EBE2 /* Car.swift */; };
 		47F51F6123F2427C00EA5BF0 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47F51F6023F2427C00EA5BF0 /* main.swift */; };
 /* End PBXBuildFile section */
 
@@ -25,6 +26,7 @@
 
 /* Begin PBXFileReference section */
 		47409B2523F3A01F00A9EBE2 /* Vehicle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vehicle.swift; sourceTree = "<group>"; };
+		47409B2723F3A10700A9EBE2 /* Car.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Car.swift; sourceTree = "<group>"; };
 		47F51F5D23F2427C00EA5BF0 /* SWIFTVehicle Renting System */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "SWIFTVehicle Renting System"; sourceTree = BUILT_PRODUCTS_DIR; };
 		47F51F6023F2427C00EA5BF0 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -61,6 +63,7 @@
 			children = (
 				47F51F6023F2427C00EA5BF0 /* main.swift */,
 				47409B2523F3A01F00A9EBE2 /* Vehicle.swift */,
+				47409B2723F3A10700A9EBE2 /* Car.swift */,
 			);
 			path = "SWIFTVehicle Renting System";
 			sourceTree = "<group>";
@@ -125,6 +128,7 @@
 			files = (
 				47409B2623F3A01F00A9EBE2 /* Vehicle.swift in Sources */,
 				47F51F6123F2427C00EA5BF0 /* main.swift in Sources */,
+				47409B2823F3A10700A9EBE2 /* Car.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
