@@ -28,14 +28,29 @@ class Vehicle
     var vehicleIdentificationNumber: Int
     var vehicleDescription: String
     var manufacturerName: String
-    var isSelfDrive: Bool
+    var isSelfDrive: Bool?
     var driver: String?
     var isInsured: Bool
     var insuranceProviderName: String
     var numberOfSeat: Int
     var fuelType: FuelType
-    var baseRatePerDay:Int
-    var ratePerKM: Double
+//    var baseRatePerDay:RatePerDay
+//    var ratePerKM = RatePerKM.BUS
     
+    init(vehicleIdentificationNumber: Int,vehicleDescription: String, manufacturerName: String, isInsured: Bool, insuranceProviderName: String, numberOfSeat: Int, fuelType: FuelType) {
+        self.vehicleIdentificationNumber=vehicleIdentificationNumber
+        self.vehicleDescription=vehicleDescription
+        self.manufacturerName=manufacturerName
+        self.isInsured=isInsured
+        self.insuranceProviderName=insuranceProviderName
+        self.numberOfSeat=numberOfSeat
+        self.fuelType=fuelType
+        //self.baseRatePerDay = .BUS
+    }
     
+//    func display()
+//    {
+//        //print(self.ratePerKM.rawValue)
+//    }
+//
 }
