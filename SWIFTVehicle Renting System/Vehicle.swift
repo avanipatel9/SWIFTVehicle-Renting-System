@@ -13,6 +13,16 @@ enum FuelType
     case PETROL, DIESEL, ELECTRIC
 }
 
+enum RatePerDay: Int
+{
+    case CAR=100, MOTORCYCLE=50, BUS=250
+}
+
+enum RatePerKM: Double
+{
+    case CAR=5, MOTORCYCLE=1, BUS=7
+}
+
 class Vehicle
 {
     var vehicleIdentificationNumber: Int
@@ -26,5 +36,6 @@ class Vehicle
     var fuelType: FuelType
     var baseRatePerDay:Int
     var ratePerKM: Double
+    
     
 }
