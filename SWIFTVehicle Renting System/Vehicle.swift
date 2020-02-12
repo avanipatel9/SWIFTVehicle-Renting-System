@@ -8,7 +8,23 @@
 
 import Foundation
 
+enum FuelType
+{
+    case PETROL, DIESEL, ELECTRIC
+}
+
 class Vehicle
 {
+    var vehicleIdentificationNumber: Int
+    var vehicleDescription: String
+    var manufacturerName: String
+    var isSelfDrive: Bool
+    var driver: String?
+    var isInsured: Bool
+    var insuranceProviderName: String
+    var numberOfSeat: Int
+    var fuelType: FuelType
+    var baseRatePerDay:Int
+    var ratePerKM: Double
     
 }
