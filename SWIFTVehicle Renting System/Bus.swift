@@ -7,3 +7,10 @@
 //
 
 import Foundation
+class Bus:Vehicle
+{
+    var busType:String
+    var isServiceAvailable:Bool
+    var   isWifiAvailable:Bool
+    
+}
