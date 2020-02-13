@@ -1,5 +1,5 @@
 //
-//  Customer.swift
+//  VehicleRent.swift
 //  SWIFTVehicle Renting System
 //
 //  Created by Avani Patel on 2/12/20.
@@ -7,9 +7,7 @@
 //
 
 import Foundation
-class Customer: Person {
-    var address: String
-    var city: String
-    var vehicleRent: VehicleRent
+class VehicleRent
+{
     
 }
