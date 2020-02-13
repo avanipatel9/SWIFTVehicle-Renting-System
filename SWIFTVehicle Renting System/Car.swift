@@ -10,5 +10,6 @@ import Foundation
 
 class Car: Vehicle
 {
-    
+    var carType:String
+    var carColor:String
 }
