@@ -10,7 +10,7 @@ import Foundation
 
 class Driver
 {
-    var drivingLicenceNumber : String
-    var isHistroyCleared : Bool
-    var salary : Double
+    var drivingLicenceNumber : String?
+    var isHistroyCleared : Bool?
+    var salary : Double?
 }

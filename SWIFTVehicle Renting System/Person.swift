@@ -15,12 +15,12 @@ enum Gender
 
 class Person
 {
-    var firstName : String
-    var lastName : String
-    var gender : Gender
-    var mobileNumber : String
-    var birthDate : Date
-    var emailID : String
-    var userName : String
-    var password : String
+    var firstName : String?
+    var lastName : String?
+    var gender : Gender?
+    var mobileNumber : String?
+    var birthDate : Date?
+    var emailID : String?
+    var userName : String?
+    var password : String?
 }
