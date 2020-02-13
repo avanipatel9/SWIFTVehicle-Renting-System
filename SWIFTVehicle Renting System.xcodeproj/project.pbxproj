@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		47409B2623F3A01F00A9EBE2 /* Vehicle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47409B2523F3A01F00A9EBE2 /* Vehicle.swift */; };
 		47409B2823F3A10700A9EBE2 /* Car.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47409B2723F3A10700A9EBE2 /* Car.swift */; };
+		47EDC9E323F4E3D1007AED96 /* Customer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47EDC9E223F4E3D1007AED96 /* Customer.swift */; };
 		47F51F6123F2427C00EA5BF0 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47F51F6023F2427C00EA5BF0 /* main.swift */; };
 		9B14800E23F4DFC100D5FCC2 /* MotorCycle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B14800D23F4DFC100D5FCC2 /* MotorCycle.swift */; };
 		9B14801023F4E07200D5FCC2 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B14800F23F4E07200D5FCC2 /* Person.swift */; };
@@ -31,6 +32,7 @@
 /* Begin PBXFileReference section */
 		47409B2523F3A01F00A9EBE2 /* Vehicle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vehicle.swift; sourceTree = "<group>"; };
 		47409B2723F3A10700A9EBE2 /* Car.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Car.swift; sourceTree = "<group>"; };
+		47EDC9E223F4E3D1007AED96 /* Customer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Customer.swift; sourceTree = "<group>"; };
 		47F51F5D23F2427C00EA5BF0 /* SWIFTVehicle Renting System */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "SWIFTVehicle Renting System"; sourceTree = BUILT_PRODUCTS_DIR; };
 		47F51F6023F2427C00EA5BF0 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		9B14800D23F4DFC100D5FCC2 /* MotorCycle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotorCycle.swift; sourceTree = "<group>"; };
@@ -76,6 +78,7 @@
 				9B14800D23F4DFC100D5FCC2 /* MotorCycle.swift */,
 				9B14800F23F4E07200D5FCC2 /* Person.swift */,
 				9B14801123F4E0EB00D5FCC2 /* Driver.swift */,
+				47EDC9E223F4E3D1007AED96 /* Customer.swift */,
 			);
 			path = "SWIFTVehicle Renting System";
 			sourceTree = "<group>";
@@ -141,6 +144,7 @@
 				9B14801023F4E07200D5FCC2 /* Person.swift in Sources */,
 				9B14801223F4E0EB00D5FCC2 /* Driver.swift in Sources */,
 				47409B2623F3A01F00A9EBE2 /* Vehicle.swift in Sources */,
+				47EDC9E323F4E3D1007AED96 /* Customer.swift in Sources */,
 				9B14800E23F4DFC100D5FCC2 /* MotorCycle.swift in Sources */,
 				9BDEEF9E23F4B8E5004781B1 /* Owner.swift in Sources */,
 				47F51F6123F2427C00EA5BF0 /* main.swift in Sources */,
