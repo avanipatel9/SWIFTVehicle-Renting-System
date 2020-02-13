@@ -45,6 +45,7 @@ class Vehicle
         self.insuranceProviderName=insuranceProviderName
         self.numberOfSeat=numberOfSeat
         self.fuelType=fuelType
+        
         //self.baseRatePerDay = .BUS
     }
     
