@@ -10,6 +10,6 @@ import Foundation
 
 class Car: Vehicle
 {
-    var carType:String
-    var carColor:String
+    var carType : String
+    var carColor : String
 }

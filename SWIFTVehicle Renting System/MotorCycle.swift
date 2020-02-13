@@ -10,5 +10,6 @@ import Foundation
 
 class MotorCycle : Vehicle
 {
-    
+    var maxTopSpeed : Int?
+    var milage : String?
 }
