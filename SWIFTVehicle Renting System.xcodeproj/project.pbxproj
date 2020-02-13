@@ -12,6 +12,7 @@
 		47F51F6123F2427C00EA5BF0 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47F51F6023F2427C00EA5BF0 /* main.swift */; };
 		9B14800E23F4DFC100D5FCC2 /* MotorCycle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B14800D23F4DFC100D5FCC2 /* MotorCycle.swift */; };
 		9B14801023F4E07200D5FCC2 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B14800F23F4E07200D5FCC2 /* Person.swift */; };
+		9B14801223F4E0EB00D5FCC2 /* Driver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B14801123F4E0EB00D5FCC2 /* Driver.swift */; };
 		9BDEEF9E23F4B8E5004781B1 /* Owner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BDEEF9D23F4B8E5004781B1 /* Owner.swift */; };
 /* End PBXBuildFile section */
 
@@ -34,6 +35,7 @@
 		47F51F6023F2427C00EA5BF0 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		9B14800D23F4DFC100D5FCC2 /* MotorCycle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotorCycle.swift; sourceTree = "<group>"; };
 		9B14800F23F4E07200D5FCC2 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		9B14801123F4E0EB00D5FCC2 /* Driver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Driver.swift; sourceTree = "<group>"; };
 		9BDEEF9D23F4B8E5004781B1 /* Owner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Owner.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -73,6 +75,7 @@
 				9BDEEF9D23F4B8E5004781B1 /* Owner.swift */,
 				9B14800D23F4DFC100D5FCC2 /* MotorCycle.swift */,
 				9B14800F23F4E07200D5FCC2 /* Person.swift */,
+				9B14801123F4E0EB00D5FCC2 /* Driver.swift */,
 			);
 			path = "SWIFTVehicle Renting System";
 			sourceTree = "<group>";
@@ -136,6 +139,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9B14801023F4E07200D5FCC2 /* Person.swift in Sources */,
+				9B14801223F4E0EB00D5FCC2 /* Driver.swift in Sources */,
 				47409B2623F3A01F00A9EBE2 /* Vehicle.swift in Sources */,
 				9B14800E23F4DFC100D5FCC2 /* MotorCycle.swift in Sources */,
 				9BDEEF9E23F4B8E5004781B1 /* Owner.swift in Sources */,
