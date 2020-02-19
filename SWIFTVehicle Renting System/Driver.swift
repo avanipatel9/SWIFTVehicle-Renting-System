@@ -8,9 +8,17 @@
 
 import Foundation
 
-class Driver
+class Driver:Person
 {
-    var drivingLicenceNumber : String?
-    var isHistroyCleared : Bool?
-    var salary : Double?
+    var drivingLicenceNumber : String
+    var isHistroyCleared : Bool
+    var salary : Double
+    
+    init(drivingLicenceNumber:String,isHistroryCleared:Bool,salary:Double,firstName:String,lastName:String,gender:Gender,mobileNumber:String,birthDate:Date,emailID:String,userName:String,password:String)
+    {
+        self.drivingLicenceNumber=drivingLicenceNumber
+        self.isHistroyCleared=isHistroryCleared
+        self.salary=salary
+        super.init(firstName: firstName, lastName: lastName, gender: gender, mobileNumber: mobileNumber, birthDate: birthDate, emailID: emailID, userName: userName, password: password)
+    }
 }
