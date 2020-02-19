@@ -23,35 +23,22 @@ enum RatePerKM: Double
     case CAR=5, MOTORCYCLE=1, BUS=7
 }
 
-class Vehicle
+protocol Vehicle:IDisplay
 {
-    var vehicleIdentificationNumber: Int
-    var vehicleDescription: String
-    var manufacturerName: String
-    var isSelfDrive: Bool?
-    var driver: String?
-    var isInsured: Bool
-    var insuranceProviderName: String
-    var numberOfSeat: Int
-    var fuelType: FuelType
-//    var baseRatePerDay:RatePerDay
-//    var ratePerKM = RatePerKM.BUS
+    var vehicleIdentificationNumber: Int { get set }
+    var vehicleDescription: String { get set }
+    var manufacturerName: String { get set }
+    var isSelfDrive: Bool { get set }
+    var driver: String { get set }
+    var isInsured: Bool { get set }
+    var insuranceProviderName: String { get set }
+    var numberOfSeat: Int { get set }
+    var fuelType: FuelType { get set }
+    var isVehicleRented:Bool {get set }
     
-    init(vehicleIdentificationNumber: Int,vehicleDescription: String, manufacturerName: String, isInsured: Bool, insuranceProviderName: String, numberOfSeat: Int, fuelType: FuelType) {
-        self.vehicleIdentificationNumber=vehicleIdentificationNumber
-        self.vehicleDescription=vehicleDescription
-        self.manufacturerName=manufacturerName
-        self.isInsured=isInsured
-        self.insuranceProviderName=insuranceProviderName
-        self.numberOfSeat=numberOfSeat
-        self.fuelType=fuelType
-        
-        //self.baseRatePerDay = .BUS
-    }
     
-//    func display()
-//    {
-//        //print(self.ratePerKM.rawValue)
-//    }
-//
+    func Display()
+    func DisplayAvailableVehicleToRent()
+    
+
 }
