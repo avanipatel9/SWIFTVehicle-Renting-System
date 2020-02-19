@@ -10,6 +10,11 @@ import Foundation
 class Customer: Person {
     var address: String
     var city: String
-    var vehicleRent: VehicleRent
+    var vehicleRent: VehicleRent?
     
+    init(firstName: String, lastName: String, gender: Gender, mobileNumber: String, birthDate: Date, emailID: String, userName: String, password: String, address: String, city: String) {
+        self.address = address
+        self.city = city
+        super.init(firstName: firstName, lastName: lastName, gender: gender, mobileNumber: mobileNumber, birthDate: birthDate, emailID: emailID, userName: userName, password: password)
+    }
 }
