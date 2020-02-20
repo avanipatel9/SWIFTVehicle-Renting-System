@@ -9,6 +9,8 @@
 import Foundation
 class Owner:Person
 {
+   
+    
     var firstName: String
     
     var lastName: String
@@ -31,6 +33,9 @@ class Owner:Person
     var landlineNumber:String
     var website:String
     var vehicleListOwned:[String:Vehicle]?
+    var fullName:String{
+        return "\(firstName) \(lastName)"
+    }
     
     init(firstName: String, lastName: String, gender: Gender, mobileNumber: String, birthDate: Date, emailID: String, userName: String, password: String, companyTitle:String, landlineNumber:String, website:String)
     {
@@ -46,9 +51,24 @@ class Owner:Person
         self.companyTitle=companyTitle
         self.landlineNumber=landlineNumber
         self.website=website
+        
     }
         
-        
+        func Display() {
+            print("First Name : \(self.firstName)")
+            print("Last Name: \(self.lastName)")
+            print("Gender : \(self.gender)")
+            print("Mobile Number : \(self.mobileNumber)")
+            print("BirthDate : \(self.birthDate)")
+            print("Emaild ID : \(self.emailID)")
+            print("User Name : \(self.userName)")
+            //Add extension for password encrypt decrypt
+            print("Password Encrypted : \(self.password)")
+            print("Password Decrypted : \(self.password)")
+            print("Age : \(self.age)")
+            
+            
+           }
     
 }
 

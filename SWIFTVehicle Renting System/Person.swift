@@ -13,7 +13,7 @@ enum Gender
     case MALE, FEMALE, OTHER
 }
 
-protocol Person
+protocol Person:IDisplay
 {
     var firstName : String { get set }
     var lastName : String { get set }

@@ -7,12 +7,12 @@
 //
 
 import Foundation
-class VehicleRent
+struct VehicleRent
 {
     var startDate:Date
-  var  endDate:Date
+   var  endDate:Date
    var noOfDaysRented:Int
-  var  vehicle:Vehicle
+var  vehicle:Vehicle
   var  noOfKmDrived:Float
   var  totalBillToPay:Double?
     
