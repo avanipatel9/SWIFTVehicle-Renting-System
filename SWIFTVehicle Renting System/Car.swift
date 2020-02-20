@@ -30,9 +30,7 @@ class Car: Vehicle
     
     var isVehicleRented: Bool
     
-    func Display() {
-    print("dd")
-    }
+   
     
     func DisplayAvailableVehicleToRent() {
         print("dd")
@@ -57,4 +55,21 @@ class Car: Vehicle
             self.fuelType=fuelType
         self.isVehicleRented=isVehicleRented
 }
+    
+    func Display()
+    {
+        print("VehicleIdentificationNumber : \(self.vehicleIdentificationNumber)")
+        print("Vehile Description : \(self.vehicleDescription)")
+        print("Manufacturer Name : \(self.manufacturerName)")
+        print("is self Drive : \(self.isSelfDrive)")
+        print("Driver : \(self.driver)")
+        print("is Insured : \(self.isInsured)")
+        print("Insurance Provider Name : \(self.insuranceProviderName)")
+        print("Number of seats : \(self.numberOfSeat)")
+        print("Fuel Type : \(self.fuelType)")
+        print("Is Vehicle Rented : \(self.isVehicleRented)")
+        
+        print("Car Type : \(self.carType)")
+        print("Car Color : \(self.carColor)")
+    }
 }
