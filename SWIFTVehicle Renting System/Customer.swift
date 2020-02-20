@@ -47,10 +47,16 @@ class Customer: Person {
         self.city = city
     }
     
-    func addVehicleRented(vehicleRented: VehicleRent, vehicleIdentificationNumber: String)
+    func addVehicleListRented(vehicleRented: VehicleRent, vehicleIdentificationNumber: String)
     {
         vehicleListRented.updateValue(vehicleRented, forKey: vehicleIdentificationNumber)
     }
+    
+    func removeVehicleList(vehicleRented: VehicleRent, vehicleIdentificationNumber: String)
+    {
+        vehicleListRented.removeValue(forKey: vehicleIdentificationNumber)
+    }
+
     
     func Display() {
         print("First Name : \(self.firstName)")
