@@ -15,7 +15,7 @@ struct VehicleRent
     var  vehicle:Vehicle
     var  noOfKmDrived:Float
     var  totalBillToPay:Double = 0.0
-    lazy var vehiclesRented = [String: Vehicle]()
+    //lazy var vehiclesRented = [String: Vehicle]()
     
     init(startDate:Date,endDate:Date,vechile:Vehicle,noOfKmDrived:Float) {
         self.startDate=startDate
@@ -26,15 +26,15 @@ struct VehicleRent
         // self.totalBillToPay=totalBillToPay
     }
     
-    mutating func addVehicleRented(vehicle: Vehicle, vehicleIdentificationNumber: String)
-    {
-        vehiclesRented.updateValue(vehicle, forKey: vehicleIdentificationNumber)
-    }
-    
-   mutating func removeVehcleRented(vehicle: Vehicle, vehicleIdentificationNumber: String)
-      {
-          vehiclesRented.removeValue(forKey: vehicleIdentificationNumber)
-      }
+//    mutating func addVehicleRented(vehicle: Vehicle, vehicleIdentificationNumber: String)
+//    {
+//        vehiclesRented.updateValue(vehicle, forKey: vehicleIdentificationNumber)
+//    }
+//
+//   mutating func removeVehcleRented(vehicle: Vehicle, vehicleIdentificationNumber: String)
+//      {
+//          vehiclesRented.removeValue(forKey: vehicleIdentificationNumber)
+//      }
       
       
     

@@ -30,6 +30,9 @@ class MotorCycle : Vehicle
     
     var isVehicleRented: Bool
     
+    var ratePerDay: RatePerDay
+    
+    var ratePerKm: RatePerKM
    
     
     func DisplayAvailableVehicleToRent() {
@@ -44,16 +47,18 @@ class MotorCycle : Vehicle
     init(vehicleIdentificationNumber: Int, vehicleDescription: String, manufacturerName: String,isSelfDrive: Bool,driver: String, isInsured: Bool, insuranceProviderName: String, numberOfSeat: Int, fuelType: FuelType,isVehicleRented: Bool, maxTopSpeed: Int, milage: Double) {
         self.maxTopSpeed=maxTopSpeed
         self.milage=milage
-       self.vehicleIdentificationNumber=vehicleIdentificationNumber
-           self.vehicleDescription=vehicleDescription
-           self.manufacturerName=manufacturerName
-       self.isSelfDrive=isSelfDrive
-       self.driver=driver
-           self.isInsured=isInsured
-           self.insuranceProviderName=insuranceProviderName
-           self.numberOfSeat=numberOfSeat
-           self.fuelType=fuelType
-       self.isVehicleRented=isVehicleRented
+        self.vehicleIdentificationNumber=vehicleIdentificationNumber
+        self.vehicleDescription=vehicleDescription
+        self.manufacturerName=manufacturerName
+        self.isSelfDrive=isSelfDrive
+        self.driver=driver
+        self.isInsured=isInsured
+        self.insuranceProviderName=insuranceProviderName
+        self.numberOfSeat=numberOfSeat
+        self.fuelType=fuelType
+        self.isVehicleRented=isVehicleRented
+        self.ratePerDay=RatePerDay.MOTORCYCLE
+        self.ratePerKm=RatePerKM.MOTORCYCLE
     }
     
     func Display()

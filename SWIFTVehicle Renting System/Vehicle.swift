@@ -35,6 +35,8 @@ protocol Vehicle:IDisplay
     var numberOfSeat: Int { get set }
     var fuelType: FuelType { get set }
     var isVehicleRented:Bool {get set }
+    var ratePerDay: RatePerDay {get}
+    var ratePerKm: RatePerKM{get}
     
     
     func Display()
