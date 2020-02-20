@@ -1,0 +1,56 @@
+[{
+  "first_name": "Cristen",
+  "last_name": "Little",
+  "gender": "Female",
+  "mobileNumber": "2405319331",
+  "birthDate": "2019-10-15",
+  "emailID": "clittle0@bigcartel.com",
+  "userName": "clittle0",
+  "password": "A3aah1",
+  "address": "55055 Springs Alley",
+  "city": "Chenglin"
+}, {
+  "first_name": "Wes",
+  "last_name": "Dundon",
+  "gender": "Male",
+  "mobileNumber": "7259357341",
+  "birthDate": "2019-09-06",
+  "emailID": "wdundon1@tinyurl.com",
+  "userName": "wdundon1",
+  "password": "IPpHinDAH4W6",
+  "address": "42489 North Lane",
+  "city": "Umeå"
+}, {
+  "first_name": "Merrick",
+  "last_name": "Dondon",
+  "gender": "Male",
+  "mobileNumber": "2191965507",
+  "birthDate": "2019-07-27",
+  "emailID": "mdondon2@weather.com",
+  "userName": "mdondon2",
+  "password": "9CJCgm8d",
+  "address": "68 Cordelia Place",
+  "city": "Su-ngai Kolok"
+}, {
+  "first_name": "Samuele",
+  "last_name": "Nichol",
+  "gender": "Male",
+  "mobileNumber": "5552548827",
+  "birthDate": "2019-05-21",
+  "emailID": "snichol3@51.la",
+  "userName": "snichol3",
+  "password": "pCHColTl1yil",
+  "address": "34462 Hauk Court",
+  "city": "Thívai"
+}, {
+  "first_name": "Valaria",
+  "last_name": "Fitzer",
+  "gender": "Female",
+  "mobileNumber": "1038839101",
+  "birthDate": "2019-03-12",
+  "emailID": "vfitzer4@xing.com",
+  "userName": "vfitzer4",
+  "password": "6EZn9cBOhxC",
+  "address": "3 Fieldstone Parkway",
+  "city": "Sabaneta"
+}]

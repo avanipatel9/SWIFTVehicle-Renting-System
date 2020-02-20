@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		47409B2623F3A01F00A9EBE2 /* Vehicle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47409B2523F3A01F00A9EBE2 /* Vehicle.swift */; };
 		47409B2823F3A10700A9EBE2 /* Car.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47409B2723F3A10700A9EBE2 /* Car.swift */; };
+		477DE70523FE174F00122A03 /* CustomerInputData.json in CopyFiles */ = {isa = PBXBuildFile; fileRef = 477DE70223FE172100122A03 /* CustomerInputData.json */; };
+		477DE70A23FE1D5800122A03 /* DriverInputData.json in CopyFiles */ = {isa = PBXBuildFile; fileRef = 477DE70923FE1D0C00122A03 /* DriverInputData.json */; };
+		477DE70B23FE1D6000122A03 /* OwnerInputData.json in CopyFiles */ = {isa = PBXBuildFile; fileRef = 477DE70823FE19F200122A03 /* OwnerInputData.json */; };
 		47EDC9E323F4E3D1007AED96 /* Customer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47EDC9E223F4E3D1007AED96 /* Customer.swift */; };
 		47EDC9E523F4E95F007AED96 /* VehicleRent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47EDC9E423F4E95F007AED96 /* VehicleRent.swift */; };
 		47F51F6123F2427C00EA5BF0 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47F51F6023F2427C00EA5BF0 /* main.swift */; };
@@ -21,6 +24,18 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		477DE70323FE172C00122A03 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 7;
+			files = (
+				477DE70B23FE1D6000122A03 /* OwnerInputData.json in CopyFiles */,
+				477DE70A23FE1D5800122A03 /* DriverInputData.json in CopyFiles */,
+				477DE70523FE174F00122A03 /* CustomerInputData.json in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		47F51F5B23F2427C00EA5BF0 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -35,6 +50,9 @@
 /* Begin PBXFileReference section */
 		47409B2523F3A01F00A9EBE2 /* Vehicle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vehicle.swift; sourceTree = "<group>"; };
 		47409B2723F3A10700A9EBE2 /* Car.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Car.swift; sourceTree = "<group>"; };
+		477DE70223FE172100122A03 /* CustomerInputData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = CustomerInputData.json; sourceTree = "<group>"; };
+		477DE70823FE19F200122A03 /* OwnerInputData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = OwnerInputData.json; sourceTree = "<group>"; };
+		477DE70923FE1D0C00122A03 /* DriverInputData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = DriverInputData.json; sourceTree = "<group>"; };
 		47EDC9E223F4E3D1007AED96 /* Customer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Customer.swift; sourceTree = "<group>"; };
 		47EDC9E423F4E95F007AED96 /* VehicleRent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleRent.swift; sourceTree = "<group>"; };
 		47F51F5D23F2427C00EA5BF0 /* SWIFTVehicle Renting System */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "SWIFTVehicle Renting System"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -88,6 +106,9 @@
 				9B14801123F4E0EB00D5FCC2 /* Driver.swift */,
 				47EDC9E223F4E3D1007AED96 /* Customer.swift */,
 				47EDC9E423F4E95F007AED96 /* VehicleRent.swift */,
+				477DE70223FE172100122A03 /* CustomerInputData.json */,
+				477DE70823FE19F200122A03 /* OwnerInputData.json */,
+				477DE70923FE1D0C00122A03 /* DriverInputData.json */,
 			);
 			path = "SWIFTVehicle Renting System";
 			sourceTree = "<group>";
@@ -102,6 +123,7 @@
 				47F51F5923F2427C00EA5BF0 /* Sources */,
 				47F51F5A23F2427C00EA5BF0 /* Frameworks */,
 				47F51F5B23F2427C00EA5BF0 /* CopyFiles */,
+				477DE70323FE172C00122A03 /* CopyFiles */,
 			);
 			buildRules = (
 			);

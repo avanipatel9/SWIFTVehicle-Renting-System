@@ -1,0 +1,62 @@
+[{
+  "first_name": "Zora",
+  "last_name": "Ferris",
+  "gender": "Female",
+  "mobileNumber": "4796672909",
+  "birthDate": "2020-01-30",
+  "emailID": "zferris0@disqus.com",
+  "userName": "zferris0",
+  "password": "EAtVnCuCe6Us",
+  "drivingLicenceNumber": "nzQq2Tx5g5HE",
+  "isHistroyCleared": true,
+  "salary": "127.62"
+}, {
+  "first_name": "Appolonia",
+  "last_name": "Cattroll",
+  "gender": "Female",
+  "mobileNumber": "8983450523",
+  "birthDate": "2019-03-20",
+  "emailID": "acattroll1@psu.edu",
+  "userName": "acattroll1",
+  "password": "x9e6xnkMpBr3",
+  "drivingLicenceNumber": "NfL6HThI",
+  "isHistroyCleared": true,
+  "salary": "179.17"
+}, {
+  "first_name": "Vernice",
+  "last_name": "McGougan",
+  "gender": "Female",
+  "mobileNumber": "4264923681",
+  "birthDate": "2019-04-12",
+  "emailID": "vmcgougan2@umn.edu",
+  "userName": "vmcgougan2",
+  "password": "RE5IOBcVm",
+  "drivingLicenceNumber": "xxLTfp9",
+  "isHistroyCleared": true,
+  "salary": "147.80"
+}, {
+  "first_name": "Quinn",
+  "last_name": "Popple",
+  "gender": "Female",
+  "mobileNumber": "9566019213",
+  "birthDate": "2019-05-12",
+  "emailID": "qpopple3@google.fr",
+  "userName": "qpopple3",
+  "password": "B9luyIYcUh",
+  "drivingLicenceNumber": "dTKgyU6SD52",
+  "isHistroyCleared": true,
+  "salary": "169.15"
+}, {
+  "first_name": "Samara",
+  "last_name": "Davenell",
+  "gender": "Female",
+  "mobileNumber": "9001558799",
+  "birthDate": "2019-07-26",
+  "emailID": "sdavenell4@mlb.com",
+  "userName": "sdavenell4",
+  "password": "FZdE2ZnFVMb",
+  "drivingLicenceNumber": "HdGB1xhqPzGs",
+  "isHistroyCleared": false,
+  "salary": "177.47"
+}]
+
