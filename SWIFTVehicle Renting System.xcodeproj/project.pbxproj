@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		472764EE23FF23B4005EE1C3 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 472764ED23FF23B4005EE1C3 /* Extension.swift */; };
 		47409B2623F3A01F00A9EBE2 /* Vehicle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47409B2523F3A01F00A9EBE2 /* Vehicle.swift */; };
 		47409B2823F3A10700A9EBE2 /* Car.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47409B2723F3A10700A9EBE2 /* Car.swift */; };
 		477DE70523FE174F00122A03 /* CustomerInputData.json in CopyFiles */ = {isa = PBXBuildFile; fileRef = 477DE70223FE172100122A03 /* CustomerInputData.json */; };
@@ -48,6 +49,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		472764ED23FF23B4005EE1C3 /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
 		47409B2523F3A01F00A9EBE2 /* Vehicle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vehicle.swift; sourceTree = "<group>"; };
 		47409B2723F3A10700A9EBE2 /* Car.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Car.swift; sourceTree = "<group>"; };
 		477DE70223FE172100122A03 /* CustomerInputData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = CustomerInputData.json; sourceTree = "<group>"; };
@@ -109,6 +111,7 @@
 				477DE70223FE172100122A03 /* CustomerInputData.json */,
 				477DE70823FE19F200122A03 /* OwnerInputData.json */,
 				477DE70923FE1D0C00122A03 /* DriverInputData.json */,
+				472764ED23FF23B4005EE1C3 /* Extension.swift */,
 			);
 			path = "SWIFTVehicle Renting System";
 			sourceTree = "<group>";
@@ -175,6 +178,7 @@
 				9B14801023F4E07200D5FCC2 /* Person.swift in Sources */,
 				9B14801223F4E0EB00D5FCC2 /* Driver.swift in Sources */,
 				47409B2623F3A01F00A9EBE2 /* Vehicle.swift in Sources */,
+				472764EE23FF23B4005EE1C3 /* Extension.swift in Sources */,
 				47EDC9E323F4E3D1007AED96 /* Customer.swift in Sources */,
 				9B6498B623FE057B00975EE6 /* Bus.swift in Sources */,
 				9B14800E23F4DFC100D5FCC2 /* MotorCycle.swift in Sources */,
