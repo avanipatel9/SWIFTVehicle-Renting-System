@@ -9,7 +9,7 @@
 import Foundation
 class Bus:Vehicle
 {
-    var vehicleIdentificationNumber: Int
+    var vehicleIdentificationNumber: String
     
     var vehicleDescription: String
     
@@ -44,7 +44,7 @@ class Bus:Vehicle
     var   isWifiAvailable:Bool
     
     //Initializer
-    init(vehicleIdentificationNumber: Int, vehicleDescription: String, manufacturerName: String,isSelfDrive: Bool,driver: String, isInsured: Bool, insuranceProviderName: String, numberOfSeat: Int, fuelType: FuelType,isVehicleRented: Bool,busType:String,isServiceAvailable:Bool,isWIfiAvailable:Bool)
+    init(vehicleIdentificationNumber: String, vehicleDescription: String, manufacturerName: String,isSelfDrive: Bool,driver: String, isInsured: Bool, insuranceProviderName: String, numberOfSeat: Int, fuelType: FuelType,isVehicleRented: Bool,busType:String,isServiceAvailable:Bool,isWIfiAvailable:Bool)
     {
         self.busType=busType
         self.isWifiAvailable=isWIfiAvailable

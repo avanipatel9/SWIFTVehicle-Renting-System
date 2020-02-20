@@ -7,7 +7,7 @@
 //
 
 import Foundation
-class Customer: Person {
+class Customer: Person  {
     
     var id: String
 
@@ -50,6 +50,10 @@ class Customer: Person {
         self.address = address
         self.city = city
     }
+    
+//    required init(from decoder: Decoder) throws {
+//        <#code#>
+//    }
     
     func addVehicleListRented(vehicleRented: VehicleRent, vehicleIdentificationNumber: String)
     {

@@ -11,7 +11,7 @@ import Foundation
 class Car: Vehicle
 {
     
-    var vehicleIdentificationNumber: Int
+    var vehicleIdentificationNumber: String
     
     var vehicleDescription: String
     
@@ -48,7 +48,7 @@ class Car: Vehicle
     var carType : String
     var carColor : String
     
-    init(vehicleIdentificationNumber: Int, vehicleDescription: String, manufacturerName: String,isSelfDrive: Bool,driver: String, isInsured: Bool, insuranceProviderName: String, numberOfSeat: Int, fuelType: FuelType,isVehicleRented: Bool, carType: String, carColor: String) {
+    init(vehicleIdentificationNumber: String, vehicleDescription: String, manufacturerName: String,isSelfDrive: Bool,driver: String, isInsured: Bool, insuranceProviderName: String, numberOfSeat: Int, fuelType: FuelType,isVehicleRented: Bool, carType: String, carColor: String) {
         self.carType = carType
         self.carColor = carColor
         self.vehicleIdentificationNumber=vehicleIdentificationNumber
