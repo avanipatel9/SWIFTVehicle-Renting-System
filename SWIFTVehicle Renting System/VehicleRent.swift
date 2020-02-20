@@ -13,11 +13,11 @@ struct VehicleRent
     var  endDate:Date
     var noOfDaysRented:Int
     var  vehicle:Vehicle
-    var  noOfKmDrived:Float
+    var  noOfKmDrived:Double
     var  totalBillToPay:Double = 0.0
     //lazy var vehiclesRented = [String: Vehicle]()
     
-    init(startDate:Date,endDate:Date,vechile:Vehicle,noOfKmDrived:Float) {
+    init(startDate:Date,endDate:Date,vechile:Vehicle,noOfKmDrived:Double) {
         self.startDate=startDate
         self.endDate=endDate
         self.noOfDaysRented=Calendar.current.dateComponents([.day], from: startDate,to: endDate).day!
@@ -36,6 +36,9 @@ struct VehicleRent
 //          vehiclesRented.removeValue(forKey: vehicleIdentificationNumber)
 //      }
       
-      
+      mutating func calculateTotalBill()
+      {
+        totalBillToPay = Double(vehicle.ratePerDay.rawValue * self.noOfDaysRented)+(vehicle.ratePerKm.rawValue * self.noOfKmDrived)
+      }
     
 }

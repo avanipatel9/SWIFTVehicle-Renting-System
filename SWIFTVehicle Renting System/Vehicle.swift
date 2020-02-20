@@ -20,7 +20,7 @@ enum RatePerDay: Int
 
 enum RatePerKM: Double
 {
-    case CAR=5, MOTORCYCLE=1, BUS=7
+    case CAR=5.0, MOTORCYCLE=1.0, BUS=7.0
 }
 
 protocol Vehicle:IDisplay
