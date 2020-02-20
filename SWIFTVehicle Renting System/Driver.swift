@@ -10,6 +10,8 @@ import Foundation
 
 class Driver:Person
 {
+    var id: String
+    
     var firstName: String
     
     var lastName: String
@@ -32,8 +34,9 @@ class Driver:Person
     var isHistroyCleared : Bool
     var salary : Double
     
-    init(firstName: String, lastName: String, gender: Gender, mobileNumber: String, birthDate: Date, emailID: String, userName: String, password: String, drivingLicenceNumber: String, isHistroyCleared: Bool, salary: Double)
+    init(id: String, firstName: String, lastName: String, gender: Gender, mobileNumber: String, birthDate: Date, emailID: String, userName: String, password: String, drivingLicenceNumber: String, isHistroyCleared: Bool, salary: Double)
     {
+        self.id = id
         self.firstName = firstName
         self.lastName = lastName
         self.gender = gender

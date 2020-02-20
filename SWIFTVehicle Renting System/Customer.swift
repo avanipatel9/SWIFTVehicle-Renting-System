@@ -8,6 +8,8 @@
 
 import Foundation
 class Customer: Person {
+    
+    var id: String
 
     var firstName: String
     
@@ -31,7 +33,9 @@ class Customer: Person {
     var city: String
     lazy var vehicleListRented = [String : VehicleRent]()
     
-   init(firstName: String, lastName: String, gender: Gender, mobileNumber: String, birthDate: Date, emailID: String, userName: String, password: String, address: String, city: String) {
+    init(id:String, firstName: String, lastName: String, gender: Gender, mobileNumber: String, birthDate: Date, emailID: String, userName: String, password: String, address: String, city: String) {
+        
+        self.id = id
         self.firstName = firstName
         self.lastName = lastName
         self.gender = gender

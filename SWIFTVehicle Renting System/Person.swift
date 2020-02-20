@@ -15,6 +15,7 @@ enum Gender
 
 protocol Person:IDisplay
 {
+    var id : String { get set}
     var firstName : String { get set }
     var lastName : String { get set }
     var gender : Gender { get set }
