@@ -31,6 +31,11 @@ struct VehicleRent
         vehiclesRented.updateValue(vehicle, forKey: vehicleIdentificationNumber)
     }
     
-   
+   mutating func removeVehcleRented(vehicle: Vehicle, vehicleIdentificationNumber: String)
+      {
+          vehiclesRented.removeValue(forKey: vehicleIdentificationNumber)
+      }
+      
+      
     
 }
