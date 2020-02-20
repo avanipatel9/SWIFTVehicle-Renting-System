@@ -47,4 +47,18 @@ class Driver:Person
         self.isHistroyCleared = isHistroyCleared
         self.salary = salary
     }
+    
+    func Display() {
+        print("First Name : \(self.firstName)")
+        print("Last Name: \(self.lastName)")
+        print("Gender : \(self.gender)")
+        print("Mobile Number : \(self.mobileNumber)")
+        print("BirthDate : \(self.birthDate)")
+        print("Emaild ID : \(self.emailID)")
+        print("User Name : \(self.userName)")
+        //Add extension for password encrypt decrypt
+        print("Password Encrypted : \(self.password)")
+        print("Password Decrypted : \(self.password)")
+        print("Age : \(self.age)")
+    }
 }
