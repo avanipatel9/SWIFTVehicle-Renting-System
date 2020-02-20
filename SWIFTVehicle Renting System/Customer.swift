@@ -31,6 +31,8 @@ class Customer: Person {
     var city: String
     lazy var vehicleListRented = [String : VehicleRent]()
     
+    lazy var customerDetails = [String : Customer]()
+    
    init(firstName: String, lastName: String, gender: Gender, mobileNumber: String, birthDate: Date, emailID: String, userName: String, password: String, address: String, city: String) {
         self.firstName = firstName
         self.lastName = lastName
@@ -47,6 +49,13 @@ class Customer: Person {
         self.city = city
     }
     
+    func addCustomer(customerDetails : Customer, firstName : String)
+    {
+       
+    }
+    
+    
+    
     func addVehicleListRented(vehicleRented: VehicleRent, vehicleIdentificationNumber: String)
     {
         vehicleListRented.updateValue(vehicleRented, forKey: vehicleIdentificationNumber)
@@ -58,7 +67,8 @@ class Customer: Person {
     }
 
     
-    func Display() {
+    func Display()
+    {
         print("First Name : \(self.firstName)")
         print("Last Name: \(self.lastName)")
         print("Gender : \(self.gender)")
