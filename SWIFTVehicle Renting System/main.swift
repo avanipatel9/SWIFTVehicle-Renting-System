@@ -39,8 +39,6 @@ func readCustomerCodable(fileName: String)
         print(error)
 
     }
-    
-    
 }
-
 readCustomerCodable(fileName: "CustomerInputData")
+

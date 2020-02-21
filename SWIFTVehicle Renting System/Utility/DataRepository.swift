@@ -17,9 +17,8 @@ class DataRepository
         
     }
     
-   static func getInstance()->DataRepository
-    {
-        
+   static func getInstance()->DataRepository{
+    return repo
     }
     
     func addVehicle(vehicle:Vehicle)
