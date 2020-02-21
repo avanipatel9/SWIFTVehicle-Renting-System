@@ -99,24 +99,56 @@
 		47F51F5F23F2427C00EA5BF0 /* SWIFTVehicle Renting System */ = {
 			isa = PBXGroup;
 			children = (
-				9B6498B423FE057B00975EE6 /* Bus.swift */,
-				9B6498B523FE057B00975EE6 /* IDisplay.swift */,
+				9B1BFAED2400781C0059E84C /* Protocol */,
+				9B1BFAEC240078050059E84C /* Utility */,
+				9B1BFAEB240077DE0059E84C /* Vehicle */,
+				9B1BFAEA240077C30059E84C /* Person */,
 				47F51F6023F2427C00EA5BF0 /* main.swift */,
-				47409B2523F3A01F00A9EBE2 /* Vehicle.swift */,
-				47409B2723F3A10700A9EBE2 /* Car.swift */,
-				9BDEEF9D23F4B8E5004781B1 /* Owner.swift */,
-				9B14800D23F4DFC100D5FCC2 /* MotorCycle.swift */,
-				9B14800F23F4E07200D5FCC2 /* Person.swift */,
-				9B14801123F4E0EB00D5FCC2 /* Driver.swift */,
-				47EDC9E223F4E3D1007AED96 /* Customer.swift */,
-				47EDC9E423F4E95F007AED96 /* VehicleRent.swift */,
 				477DE70223FE172100122A03 /* CustomerInputData.json */,
 				477DE70823FE19F200122A03 /* OwnerInputData.json */,
 				477DE70923FE1D0C00122A03 /* DriverInputData.json */,
-				472764F023FF45A9005EE1C3 /* String+Extension.swift */,
-				472764F223FF597A005EE1C3 /* Date+Extension.swift */,
 			);
 			path = "SWIFTVehicle Renting System";
+			sourceTree = "<group>";
+		};
+		9B1BFAEA240077C30059E84C /* Person */ = {
+			isa = PBXGroup;
+			children = (
+				47EDC9E223F4E3D1007AED96 /* Customer.swift */,
+				9B14801123F4E0EB00D5FCC2 /* Driver.swift */,
+				9BDEEF9D23F4B8E5004781B1 /* Owner.swift */,
+			);
+			path = Person;
+			sourceTree = "<group>";
+		};
+		9B1BFAEB240077DE0059E84C /* Vehicle */ = {
+			isa = PBXGroup;
+			children = (
+				47409B2723F3A10700A9EBE2 /* Car.swift */,
+				47EDC9E423F4E95F007AED96 /* VehicleRent.swift */,
+				9B14800D23F4DFC100D5FCC2 /* MotorCycle.swift */,
+				9B6498B423FE057B00975EE6 /* Bus.swift */,
+			);
+			path = Vehicle;
+			sourceTree = "<group>";
+		};
+		9B1BFAEC240078050059E84C /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				472764F223FF597A005EE1C3 /* Date+Extension.swift */,
+				472764F023FF45A9005EE1C3 /* String+Extension.swift */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		9B1BFAED2400781C0059E84C /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				9B14800F23F4E07200D5FCC2 /* Person.swift */,
+				47409B2523F3A01F00A9EBE2 /* Vehicle.swift */,
+				9B6498B523FE057B00975EE6 /* IDisplay.swift */,
+			);
+			path = Protocol;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
