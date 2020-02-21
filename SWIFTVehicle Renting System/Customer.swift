@@ -31,7 +31,12 @@ class Customer: Person  {
     
     var address: String
     var city: String
+    
+    lazy var customerDetails = [String : Customer]()
+    
     lazy var vehicleListRented = [String : VehicleRent]()
+    
+    
     
     init(id:String, firstName: String, lastName: String, gender: Gender, mobileNumber: String, birthDate: Date, emailID: String, userName: String, password: String, address: String, city: String) {
         
@@ -51,9 +56,7 @@ class Customer: Person  {
         self.city = city
     }
     
-//    required init(from decoder: Decoder) throws {
-//        <#code#>
-//    }
+
     
     func addVehicleListRented(vehicleRented: VehicleRent, vehicleIdentificationNumber: String)
     {
