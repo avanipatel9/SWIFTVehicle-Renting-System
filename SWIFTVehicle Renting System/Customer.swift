@@ -58,8 +58,16 @@ class Customer: Person, Codable  {
         self.city = city
     }
     
-
+    func addCustomer(customerValue : Customer, firstName : String)
+    {
+        customerDetails.updateValue(customerValue, forKey: firstName)
+    }
     
+   func removeCustomer(customerValue : Customer, firstName : String)
+    {
+        customerDetails.removeValue(forKey: firstName)
+    }
+           
     func addVehicleListRented(vehicleRented: VehicleRent, vehicleIdentificationNumber: String)
     {
         vehicleListRented.updateValue(vehicleRented, forKey: vehicleIdentificationNumber)
