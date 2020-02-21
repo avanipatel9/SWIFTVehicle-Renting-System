@@ -7,7 +7,7 @@
 //
 
 import Foundation
-class Bus:Vehicle
+class Bus:Vehicle, Codable
 {
     var vehicleIdentificationNumber: String
     

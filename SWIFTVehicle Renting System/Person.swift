@@ -8,9 +8,9 @@
 
 import Foundation
 
-enum Gender
+enum Gender: String, Codable
 {
-    case MALE, FEMALE, OTHER
+    case Male, Female, Other
 }
 
 protocol Person:IDisplay
@@ -20,10 +20,9 @@ protocol Person:IDisplay
     var lastName : String { get set }
     var gender : Gender { get set }
     var mobileNumber : String { get set }
-    var birthDate : Date { get set }
+    var birthDate : Date? { get set }
     var emailID : String { get set }
     var userName : String { get set }
     var password : String { get set }
-    var age:Int { get }
-
+    var age:Int? { get }
 }

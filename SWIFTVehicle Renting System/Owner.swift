@@ -7,7 +7,7 @@
 //
 
 import Foundation
-class Owner:Person
+class Owner:Person, Codable
 {
     var id: String
     
@@ -19,7 +19,7 @@ class Owner:Person
     
     var mobileNumber: String
     
-    var birthDate: Date
+    var birthDate: Date?
     
     var emailID: String
     
@@ -27,12 +27,15 @@ class Owner:Person
     
     var password: String
     
-    var age: Int
+    var age: Int?
+    {
+        return 0
+    }
     
     var companyTitle:String
     var landlineNumber:String
     var website:String
-    var vehicleListOwned:[String:Vehicle]?
+    lazy var vehicleListOwned = [String:Vehicle]()
     var fullName:String{
         return "\(firstName) \(lastName)"
     }
@@ -48,28 +51,27 @@ class Owner:Person
         self.emailID = emailID
         self.userName = userName
         self.password = password
-        self.age = Calendar.current.dateComponents([.year], from: birthDate,to: Date()).year!
         self.companyTitle=companyTitle
         self.landlineNumber=landlineNumber
         self.website=website
         
     }
+    
+    func Display() {
+        print("First Name : \(self.firstName)")
+        print("Last Name: \(self.lastName)")
+        print("Gender : \(self.gender)")
+        print("Mobile Number : \(self.mobileNumber)")
+        print("BirthDate : \(self.birthDate!)")
+        print("Emaild ID : \(self.emailID)")
+        print("User Name : \(self.userName)")
+        //Add extension for password encrypt decrypt
+        print("Password Encrypted : \(self.password)")
+        print("Password Decrypted : \(self.password)")
+        print("Age : \(self.age)")
         
-        func Display() {
-            print("First Name : \(self.firstName)")
-            print("Last Name: \(self.lastName)")
-            print("Gender : \(self.gender)")
-            print("Mobile Number : \(self.mobileNumber)")
-            print("BirthDate : \(self.birthDate)")
-            print("Emaild ID : \(self.emailID)")
-            print("User Name : \(self.userName)")
-            //Add extension for password encrypt decrypt
-            print("Password Encrypted : \(self.password)")
-            print("Password Decrypted : \(self.password)")
-            print("Age : \(self.age)")
-            
-            
-           }
+        
+    }
     
 }
 

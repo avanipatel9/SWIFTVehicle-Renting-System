@@ -1,10 +1,10 @@
 [{
   "id": "C001",
-  "first_name": "Cristen",
-  "last_name": "Little",
+  "firstName": "Cristen",
+  "lastName": "Little",
   "gender": "Female",
   "mobileNumber": "2405319331",
-  "birthDate": "2019-10-15",
+  "birthDate": 20191015,
   "emailID": "clittle0@bigcartel.com",
   "userName": "clittle0",
   "password": "A3aah1",
@@ -12,11 +12,11 @@
   "city": "Chenglin"
 }, {
   "id": "C002",
-  "first_name": "Wes",
-  "last_name": "Dundon",
+  "firstName": "Wes",
+  "lastName": "Dundon",
   "gender": "Male",
   "mobileNumber": "7259357341",
-  "birthDate": "2019-09-06",
+  "birthDate": 20190906,
   "emailID": "wdundon1@tinyurl.com",
   "userName": "wdundon1",
   "password": "IPpHinDAH4W6",
@@ -24,11 +24,11 @@
   "city": "Umeå"
 }, {
   "id": "C003",
-  "first_name": "Merrick",
-  "last_name": "Dondon",
+  "firstName": "Merrick",
+  "lastName": "Dondon",
   "gender": "Male",
   "mobileNumber": "2191965507",
-  "birthDate": "2019-07-27",
+  "birthDate": 20190727,
   "emailID": "mdondon2@weather.com",
   "userName": "mdondon2",
   "password": "9CJCgm8d",
@@ -36,11 +36,11 @@
   "city": "Su-ngai Kolok"
 }, {
   "id": "C004",
-  "first_name": "Samuele",
-  "last_name": "Nichol",
+  "firstName": "Samuele",
+  "lastName": "Nichol",
   "gender": "Male",
   "mobileNumber": "5552548827",
-  "birthDate": "2019-05-21",
+  "birthDate": 20190521,
   "emailID": "snichol3@51.la",
   "userName": "snichol3",
   "password": "pCHColTl1yil",
@@ -48,11 +48,11 @@
   "city": "Thívai"
 }, {
   "id": "C005",
-  "first_name": "Valaria",
-  "last_name": "Fitzer",
+  "firstName": "Valaria",
+  "lastName": "Fitzer",
   "gender": "Female",
   "mobileNumber": "1038839101",
-  "birthDate": "2019-03-12",
+  "birthDate": 20190312,
   "emailID": "vfitzer4@xing.com",
   "userName": "vfitzer4",
   "password": "6EZn9cBOhxC",

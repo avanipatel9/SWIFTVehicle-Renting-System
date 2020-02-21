@@ -7,7 +7,7 @@
 //
 
 import Foundation
-class Customer: Person  {
+class Customer: Person, Codable  {
     
     var id: String
 
@@ -19,7 +19,7 @@ class Customer: Person  {
     
     var mobileNumber: String
     
-    var birthDate: Date
+    var birthDate: Date?
     
     var emailID: String
     
@@ -27,12 +27,15 @@ class Customer: Person  {
     
     var password: String
     
-    var age: Int
+    var age: Int?
+    {
+        return 0
+    }
     
     var address: String
     var city: String
     
-    lazy var customerDetails = [String : Customer]()
+    //lazy var customerDetails = [String : Customer]()
     
     lazy var vehicleListRented = [String : VehicleRent]()
    
@@ -48,7 +51,7 @@ class Customer: Person  {
         self.emailID = emailID
         self.userName = userName
         self.password = password
-        self.age = Calendar.current.dateComponents([.year], from: birthDate,to: Date()).year!
+        //self.age = Calendar.current.dateComponents([.year], from: birthDate,to: Date()).year!
         self.address = address
         self.city = city
         self.address = address
@@ -66,7 +69,6 @@ class Customer: Person  {
     {
         vehicleListRented.removeValue(forKey: vehicleIdentificationNumber)
     }
-
     
     func Display()
     {

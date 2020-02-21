@@ -8,7 +8,7 @@
 
 import Foundation
 
-class MotorCycle : Vehicle
+class MotorCycle : Vehicle, Codable
 {
     var vehicleIdentificationNumber: String
     

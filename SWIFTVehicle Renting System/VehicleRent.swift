@@ -7,23 +7,34 @@
 //
 
 import Foundation
-struct VehicleRent
+struct VehicleRent:IDisplay, Codable
 {
-    var startDate:Date
-    var  endDate:Date
+    func Display() {
+        
+    }
+    
+    var startDate:Date?
+    var endDate:Date?
     var noOfDaysRented:Int
-    var  vehicle:Vehicle
-    var  noOfKmDrived:Double
-    var  totalBillToPay:Double = 0.0
+    var vehicle:Car
+    var noOfKmDrived:Double
+    var totalBillToPay:Double
+    {
+        return Double(vehicle.ratePerDay.rawValue * self.noOfDaysRented)+(vehicle.ratePerKm.rawValue * self.noOfKmDrived)
+    }
     //lazy var vehiclesRented = [String: Vehicle]()
     
-    init(startDate:Date,endDate:Date,vechile:Vehicle,noOfKmDrived:Double) {
+    init(startDate:Date,endDate:Date,vechile:Car,noOfKmDrived:Double) {
         self.startDate=startDate
         self.endDate=endDate
         self.noOfDaysRented=Calendar.current.dateComponents([.day], from: startDate,to: endDate).day!
         self.noOfKmDrived=noOfKmDrived
         self.vehicle=vechile
         // self.totalBillToPay=totalBillToPay
+    }
+    
+     init(from decoder: Decoder) throws {
+        fatalError("init(from:) has not been implemented")
     }
     
 //    mutating func addVehicleRented(vehicle: Vehicle, vehicleIdentificationNumber: String)
@@ -35,10 +46,5 @@ struct VehicleRent
 //      {
 //          vehiclesRented.removeValue(forKey: vehicleIdentificationNumber)
 //      }
-      
-      mutating func calculateTotalBill()
-      {
-        totalBillToPay = Double(vehicle.ratePerDay.rawValue * self.noOfDaysRented)+(vehicle.ratePerKm.rawValue * self.noOfKmDrived)
-      }
     
 }

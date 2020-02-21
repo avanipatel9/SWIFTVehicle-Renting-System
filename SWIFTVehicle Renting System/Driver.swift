@@ -8,7 +8,7 @@
 
 import Foundation
 
-class Driver:Person
+class Driver:Person, Codable
 {
     var id: String
     
@@ -20,7 +20,7 @@ class Driver:Person
     
     var mobileNumber: String
     
-    var birthDate: Date
+    var birthDate: Date?
     
     var emailID: String
     
@@ -28,7 +28,10 @@ class Driver:Person
     
     var password: String
     
-    var age: Int
+    var age: Int?
+    {
+        return 0
+    }
     
     var drivingLicenceNumber : String
     var isHistroyCleared : Bool
@@ -45,7 +48,7 @@ class Driver:Person
         self.emailID = emailID
         self.userName = userName
         self.password = password
-        self.age = Calendar.current.dateComponents([.year], from: birthDate,to: Date()).year!
+        //self.age = Calendar.current.dateComponents([.year], from: birthDate,to: Date()).year!
         self.drivingLicenceNumber = drivingLicenceNumber
         self.isHistroyCleared = isHistroyCleared
         self.salary = salary

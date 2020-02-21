@@ -22,15 +22,25 @@ func readCustomerCodable(fileName: String)
         return
     }
     
-    guard let customer = try? JSONSerialization.jsonObject(with: data, options: [])else {
-           print("Error while reading JSON Data from file")
-           return
+//    guard let customer = try? JSONSerialization.jsonObject(with: data, options: [])else {
+//           print("Error while reading JSON Data from file")
+//           return
+//        }
+    
+    do{
+    let customers = try JSONDecoder().decode([Customer].self, from: data)
+        //print(customers)
+        for c in customers
+        {
+            c.Display()
         }
+    }catch {
+        print("Error while reading JSON Data from file")
+        print(error)
+
+    }
     
-//    guard let customer = try? JSONDecoder().decode(Customer.self, from: data)else {
-//        print("Error while reading JSON Data from file")
-//        return
-//    }
     
-    print(customer)
 }
+
+readCustomerCodable(fileName: "CustomerInputData")
