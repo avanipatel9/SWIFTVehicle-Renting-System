@@ -104,6 +104,7 @@
 				9B1BFAEB240077DE0059E84C /* Vehicle */,
 				9B1BFAEA240077C30059E84C /* Person */,
 				47F51F6023F2427C00EA5BF0 /* main.swift */,
+				47EDC9E423F4E95F007AED96 /* VehicleRent.swift */,
 				477DE70223FE172100122A03 /* CustomerInputData.json */,
 				477DE70823FE19F200122A03 /* OwnerInputData.json */,
 				477DE70923FE1D0C00122A03 /* DriverInputData.json */,
@@ -125,7 +126,6 @@
 			isa = PBXGroup;
 			children = (
 				47409B2723F3A10700A9EBE2 /* Car.swift */,
-				47EDC9E423F4E95F007AED96 /* VehicleRent.swift */,
 				9B14800D23F4DFC100D5FCC2 /* MotorCycle.swift */,
 				9B6498B423FE057B00975EE6 /* Bus.swift */,
 			);
