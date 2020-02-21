@@ -29,7 +29,7 @@ class Customer: Person, Codable  {
     
     var age: Int?
     {
-        return 0
+        return Calendar.current.dateComponents([.year], from: birthDate!,to: Date()).year
     }
     
     var address: String
@@ -80,16 +80,17 @@ class Customer: Person, Codable  {
     
     func Display()
     {
-        print("First Name : \(self.firstName)")
-        print("Last Name: \(self.lastName)")
-        print("Gender : \(self.gender)")
-        print("Mobile Number : \(self.mobileNumber)")
-        print("BirthDate : \(self.birthDate)")
-        print("Emaild ID : \(self.emailID)")
-        print("User Name : \(self.userName)")
+        print("---------Customer----------")
+        print("\t First Name : \(self.firstName)")
+        print("\t Last Name: \(self.lastName)")
+        print("\t Gender : \(self.gender)")
+        print("\t Mobile Number : \(self.mobileNumber)")
+        print("\t BirthDate : \(String(describing: self.birthDate))")
+        print("\t Emaild ID : \(self.emailID)")
+        print("\t User Name : \(self.userName)")
         //Add extension for password encrypt decrypt
-        print("Password Encrypted : \(self.password)")
-        print("Password Decrypted : \(self.password)")
-        print("Age : \(self.age)")
+        print("\t Password Encrypted : \(self.password)")
+        print("\t Password Decrypted : \(self.password)")
+        print("\t Age : \(String(describing: self.age))")
     }
 }

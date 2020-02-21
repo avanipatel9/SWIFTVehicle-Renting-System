@@ -8,6 +8,7 @@
 
 import Foundation
 
+//Function to Read from Json Files
 func readCustomerCodable(fileName: String)
 {
     let filepPath = Bundle.main.url(forResource: fileName, withExtension: "json")
@@ -40,5 +41,18 @@ func readCustomerCodable(fileName: String)
 
     }
 }
-readCustomerCodable(fileName: "CustomerInputData")
+print("***********  Read from Json Files  ****************")
+//readCustomerCodable(fileName: "CustomerInputData") //Read Json File
+print("**************************************************\n\n")
 
+
+let formatter = DateFormatter()
+formatter.dateFormat = "yyyy/MM/dd"
+
+//Create Customers
+var c1 = Customer(id: "C001", firstName: "Cristen", lastName: "Little", gender: .Female, mobileNumber: "6471202489", birthDate: formatter.date(from: "2019-01-15")!, emailID: "cristen.little@gmail.com", userName: "Cristen123", password: "pasword", address: "18 Young Street", city: "Toronto")
+
+ 
+
+
+c1.Display()
