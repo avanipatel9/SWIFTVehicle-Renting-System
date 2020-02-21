@@ -40,7 +40,8 @@ class Customer: Person, Codable  {
     lazy var vehicleListRented = [String : VehicleRent]()
    
     
-    init(id:String, firstName: String, lastName: String, gender: Gender, mobileNumber: String, birthDate: Date, emailID: String, userName: String, password: String, address: String, city: String) {
+    init(id:String, firstName: String, lastName: String, gender: Gender, mobileNumber: String, birthDate: Date, emailID: String, userName: String, password: String, address: String, city: String) throws
+    {
         
         self.id = id
         self.firstName = firstName
