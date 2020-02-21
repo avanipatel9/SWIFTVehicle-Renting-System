@@ -35,8 +35,7 @@ class Customer: Person  {
     lazy var customerDetails = [String : Customer]()
     
     lazy var vehicleListRented = [String : VehicleRent]()
-    
-    
+   
     
     init(id:String, firstName: String, lastName: String, gender: Gender, mobileNumber: String, birthDate: Date, emailID: String, userName: String, password: String, address: String, city: String) {
         
