@@ -17,7 +17,7 @@ class Bus:Vehicle, Codable
     
     var isSelfDrive: Bool
     
-    var driver: String
+    var driver: String?
     
     var isInsured: Bool
     
@@ -44,7 +44,7 @@ class Bus:Vehicle, Codable
     var   isWifiAvailable:Bool
     
     //Initializer
-    init(vehicleIdentificationNumber: String, vehicleDescription: String, manufacturerName: String,isSelfDrive: Bool,driver: String, isInsured: Bool, insuranceProviderName: String, numberOfSeat: Int, fuelType: FuelType,isVehicleRented: Bool,busType:String,isServiceAvailable:Bool,isWIfiAvailable:Bool)
+    init(vehicleIdentificationNumber: String, vehicleDescription: String, manufacturerName: String,isSelfDrive: Bool, isInsured: Bool, insuranceProviderName: String, numberOfSeat: Int, fuelType: FuelType,isVehicleRented: Bool,busType:String,isServiceAvailable:Bool,isWIfiAvailable:Bool)
     {
         self.busType=busType
         self.isWifiAvailable=isWIfiAvailable
@@ -53,7 +53,6 @@ class Bus:Vehicle, Codable
         self.vehicleDescription=vehicleDescription
         self.manufacturerName=manufacturerName
         self.isSelfDrive=isSelfDrive
-        self.driver=driver
         self.isInsured=isInsured
         self.insuranceProviderName=insuranceProviderName
         self.numberOfSeat=numberOfSeat

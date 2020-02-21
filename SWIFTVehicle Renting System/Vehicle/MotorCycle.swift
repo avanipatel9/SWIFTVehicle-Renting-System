@@ -18,7 +18,7 @@ class MotorCycle : Vehicle, Codable
     
     var isSelfDrive: Bool
     
-    var driver: String
+    var driver: String?
     
     var isInsured: Bool
     
@@ -44,14 +44,13 @@ class MotorCycle : Vehicle, Codable
     var maxTopSpeed : Int
     var milage : Double
     
-    init(vehicleIdentificationNumber: String, vehicleDescription: String, manufacturerName: String,isSelfDrive: Bool,driver: String, isInsured: Bool, insuranceProviderName: String, numberOfSeat: Int, fuelType: FuelType,isVehicleRented: Bool, maxTopSpeed: Int, milage: Double) {
+    init(vehicleIdentificationNumber: String, vehicleDescription: String, manufacturerName: String,isSelfDrive: Bool, isInsured: Bool, insuranceProviderName: String, numberOfSeat: Int, fuelType: FuelType,isVehicleRented: Bool, maxTopSpeed: Int, milage: Double) {
         self.maxTopSpeed=maxTopSpeed
         self.milage=milage
         self.vehicleIdentificationNumber=vehicleIdentificationNumber
         self.vehicleDescription=vehicleDescription
         self.manufacturerName=manufacturerName
         self.isSelfDrive=isSelfDrive
-        self.driver=driver
         self.isInsured=isInsured
         self.insuranceProviderName=insuranceProviderName
         self.numberOfSeat=numberOfSeat

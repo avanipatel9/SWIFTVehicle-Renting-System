@@ -19,7 +19,7 @@ class Car: Vehicle, Codable
     
     var isSelfDrive: Bool
     
-    var driver: String
+    var driver: String?
     
     var isInsured: Bool
     
@@ -48,14 +48,13 @@ class Car: Vehicle, Codable
     var carType : String
     var carColor : String
     
-    init(vehicleIdentificationNumber: String, vehicleDescription: String, manufacturerName: String,isSelfDrive: Bool,driver: String, isInsured: Bool, insuranceProviderName: String, numberOfSeat: Int, fuelType: FuelType,isVehicleRented: Bool, carType: String, carColor: String) {
+    init(vehicleIdentificationNumber: String, vehicleDescription: String, manufacturerName: String,isSelfDrive: Bool, isInsured: Bool, insuranceProviderName: String, numberOfSeat: Int, fuelType: FuelType,isVehicleRented: Bool, carType: String, carColor: String) {
         self.carType = carType
         self.carColor = carColor
         self.vehicleIdentificationNumber=vehicleIdentificationNumber
         self.vehicleDescription=vehicleDescription
         self.manufacturerName=manufacturerName
         self.isSelfDrive=isSelfDrive
-        self.driver=driver
         self.isInsured=isInsured
         self.insuranceProviderName=insuranceProviderName
         self.numberOfSeat=numberOfSeat
