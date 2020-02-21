@@ -10,7 +10,7 @@ import Foundation
 
 class MotorCycle : Vehicle
 {
-    var vehicleIdentificationNumber: Int
+    var vehicleIdentificationNumber: String
     
     var vehicleDescription: String
     
@@ -44,7 +44,7 @@ class MotorCycle : Vehicle
     var maxTopSpeed : Int
     var milage : Double
     
-    init(vehicleIdentificationNumber: Int, vehicleDescription: String, manufacturerName: String,isSelfDrive: Bool,driver: String, isInsured: Bool, insuranceProviderName: String, numberOfSeat: Int, fuelType: FuelType,isVehicleRented: Bool, maxTopSpeed: Int, milage: Double) {
+    init(vehicleIdentificationNumber: String, vehicleDescription: String, manufacturerName: String,isSelfDrive: Bool,driver: String, isInsured: Bool, insuranceProviderName: String, numberOfSeat: Int, fuelType: FuelType,isVehicleRented: Bool, maxTopSpeed: Int, milage: Double) {
         self.maxTopSpeed=maxTopSpeed
         self.milage=milage
         self.vehicleIdentificationNumber=vehicleIdentificationNumber

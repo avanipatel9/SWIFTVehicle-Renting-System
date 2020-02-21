@@ -7,7 +7,9 @@
 //
 
 import Foundation
-class Customer: Person {
+class Customer: Person  {
+    
+    var id: String
 
     var firstName: String
     
@@ -31,9 +33,9 @@ class Customer: Person {
     var city: String
     lazy var vehicleListRented = [String : VehicleRent]()
     
-    lazy var customerDetails = [String : Customer]()
-    
-   init(firstName: String, lastName: String, gender: Gender, mobileNumber: String, birthDate: Date, emailID: String, userName: String, password: String, address: String, city: String) {
+    init(id:String, firstName: String, lastName: String, gender: Gender, mobileNumber: String, birthDate: Date, emailID: String, userName: String, password: String, address: String, city: String) {
+        
+        self.id = id
         self.firstName = firstName
         self.lastName = lastName
         self.gender = gender
@@ -49,12 +51,9 @@ class Customer: Person {
         self.city = city
     }
     
-    func addCustomer(customerDetails : Customer, firstName : String)
-    {
-       
-    }
-    
-    
+//    required init(from decoder: Decoder) throws {
+//        <#code#>
+//    }
     
     func addVehicleListRented(vehicleRented: VehicleRent, vehicleIdentificationNumber: String)
     {

@@ -25,7 +25,7 @@ enum RatePerKM: Double
 
 protocol Vehicle:IDisplay
 {
-    var vehicleIdentificationNumber: Int { get set }
+    var vehicleIdentificationNumber: String { get set }
     var vehicleDescription: String { get set }
     var manufacturerName: String { get set }
     var isSelfDrive: Bool { get set }

@@ -9,7 +9,7 @@
 import Foundation
 class Owner:Person
 {
-   
+    var id: String
     
     var firstName: String
     
@@ -37,8 +37,9 @@ class Owner:Person
         return "\(firstName) \(lastName)"
     }
     
-    init(firstName: String, lastName: String, gender: Gender, mobileNumber: String, birthDate: Date, emailID: String, userName: String, password: String, companyTitle:String, landlineNumber:String, website:String)
+    init(id:String, firstName: String, lastName: String, gender: Gender, mobileNumber: String, birthDate: Date, emailID: String, userName: String, password: String, companyTitle:String, landlineNumber:String, website:String)
     {
+        self.id = id
         self.firstName = firstName
         self.lastName = lastName
         self.gender = gender
