@@ -24,12 +24,15 @@ extension String
         return phoneTest.evaluate(with: self)
     }
     
-    func encryptPassword()
+    func encryptpass(password : String) -> String
     {
-        let password = "Password"
-        let encryptMsg = "MessageToEncrypt"
-        
-        
+        let op  = password
+        var characters = Array(op)
+        for char in characters
+        {
+            char.asciiValue! + 5;
+            characters.append(char)
+        }
+        return String(characters)
     }
-    
 }
