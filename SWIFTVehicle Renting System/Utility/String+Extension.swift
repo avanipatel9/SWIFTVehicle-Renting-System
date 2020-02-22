@@ -35,4 +35,9 @@ extension String
         }
         return String(characters)
     }
+    
+    func decryptPass(password : String) -> String
+    {
+        
+    }
 }
