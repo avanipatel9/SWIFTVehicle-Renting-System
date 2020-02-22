@@ -29,7 +29,7 @@ protocol Vehicle:IDisplay
     var vehicleDescription: String { get set }
     var manufacturerName: String { get set }
     var isSelfDrive: Bool { get set }
-    var driver: String? { get set }
+    var driver: Driver? { get set }
     var isInsured: Bool { get set }
     var insuranceProviderName: String { get set }
     var numberOfSeat: Int { get set }
@@ -40,7 +40,7 @@ protocol Vehicle:IDisplay
     
     
     func Display()
-    func DisplayAvailableVehicleToRent()
+    
     
 
 }

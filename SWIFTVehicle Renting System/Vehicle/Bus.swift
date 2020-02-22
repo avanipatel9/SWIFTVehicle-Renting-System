@@ -17,7 +17,7 @@ class Bus:Vehicle, Codable
     
     var isSelfDrive: Bool
     
-    var driver: String?
+    var driver: Driver?
     
     var isInsured: Bool
     
