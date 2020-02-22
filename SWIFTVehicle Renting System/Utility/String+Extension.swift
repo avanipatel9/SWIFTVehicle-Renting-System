@@ -23,4 +23,30 @@ extension String
         let phoneTest = NSPredicate(format: "SELF MATCHES %@", PHONE_REGEX)
         return phoneTest.evaluate(with: self)
     }
+    
+    func encryptpass(password : String) -> String
+    {
+        let op  = password
+        var characters = Array(op)
+        for char in characters
+        {
+            char.asciiValue! + 5;
+            characters.append(char)
+        }
+        return String(characters)
+    }
+    
+    func decryptPass(password : String) -> String
+    {
+        let op  = password
+        var characters = Array(op)
+        
+        for char in characters
+        {
+            char.asciiValue! - 5;
+            characters.append(char)
+        }
+
+        return String(characters)
+    }
 }
