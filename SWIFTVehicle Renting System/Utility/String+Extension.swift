@@ -41,6 +41,12 @@ extension String
         let op  = password
         var characters = Array(op)
         
+        for char in characters
+        {
+            char.asciiValue! - 5;
+            characters.append(char)
+        }
+
         return String(characters)
     }
 }
