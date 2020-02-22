@@ -41,4 +41,26 @@ class DataRepository
     {
         self.vehicleList
     }
+    
+    func DisplayAvailableVehicleToRent()
+    {
+        print("--------Available Vehicles to rent--------")
+        print("-----------------------------------------------")
+        if vehicleList.count == 0
+        {
+            print("Note : All vehicles are rented")
+        }
+        else
+        {
+            for availVehicle in vehicleList
+            {
+                if availVehicle.value.isVehicleRented==false
+                {
+                    
+                    availVehicle.value.Display()
+                    print("-----------------------------------------------")
+                }
+            }
+        }
+    }
 }

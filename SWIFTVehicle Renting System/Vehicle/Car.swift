@@ -19,7 +19,7 @@ class Car: Vehicle, Codable
     
     var isSelfDrive: Bool
     
-    var driver: String?
+    var driver: Driver?
     
     var isInsured: Bool
     
@@ -70,7 +70,7 @@ class Car: Vehicle, Codable
         print("Vehile Description : \(self.vehicleDescription)")
         print("Manufacturer Name : \(self.manufacturerName)")
         print("is self Drive : \(self.isSelfDrive)")
-        print("Driver : \(self.driver)")
+        print("Driver : \(self.driver?.firstName)")
         print("is Insured : \(self.isInsured)")
         print("Insurance Provider Name : \(self.insuranceProviderName)")
         print("Number of seats : \(self.numberOfSeat)")
