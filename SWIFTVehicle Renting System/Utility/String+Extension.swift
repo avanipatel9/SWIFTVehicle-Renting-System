@@ -38,6 +38,9 @@ extension String
     
     func decryptPass(password : String) -> String
     {
+        let op  = password
+        var characters = Array(op)
         
+        return String(characters)
     }
 }
