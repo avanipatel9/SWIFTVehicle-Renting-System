@@ -8,22 +8,22 @@
 
 import Foundation
 
-enum FuelType: String, Codable
+enum FuelType: String//, Codable
 {
     case PETROL, DIESEL, ELECTRIC
 }
 
-enum RatePerDay: Int, Codable
+enum RatePerDay: Int//, Codable
 {
     case CAR=100, MOTORCYCLE=50, BUS=250
 }
 
-enum RatePerKM: Double, Codable
+enum RatePerKM: Double//, Codable
 {
     case CAR=5.0, MOTORCYCLE=1.0, BUS=7.0
 }
 
-protocol Vehicle:IDisplay
+protocol Vehicle:IDisplay//, Codable
 {
     var vehicleIdentificationNumber: String { get set }
     var vehicleDescription: String { get set }

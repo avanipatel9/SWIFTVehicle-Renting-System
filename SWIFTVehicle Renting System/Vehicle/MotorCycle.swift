@@ -8,7 +8,7 @@
 
 import Foundation
 
-class MotorCycle : Vehicle, Codable
+class MotorCycle : Vehicle//, Codable
 {
     var vehicleIdentificationNumber: String
     
@@ -33,13 +33,6 @@ class MotorCycle : Vehicle, Codable
     var ratePerDay: RatePerDay
     
     var ratePerKm: RatePerKM
-   
-    
-    func DisplayAvailableVehicleToRent() {
-         print("dd")
-    }
-    
-   
     
     var maxTopSpeed : Int
     var milage : Double

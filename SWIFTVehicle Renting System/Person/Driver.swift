@@ -8,7 +8,7 @@
 
 import Foundation
 
-class Driver:Person, Codable
+class Driver:Person//, Codable
 {
     var id: String
     

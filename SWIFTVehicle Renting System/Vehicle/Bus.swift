@@ -7,7 +7,7 @@
 //
 
 import Foundation
-class Bus:Vehicle, Codable
+class Bus:Vehicle//, Codable
 {
     var vehicleIdentificationNumber: String
     
@@ -32,12 +32,6 @@ class Bus:Vehicle, Codable
    var ratePerDay: RatePerDay
    
    var ratePerKm: RatePerKM
-    
-    func DisplayAvailableVehicleToRent() {
-         print("dd")
-    }
-    
-    
     
     var busType:String
     var isServiceAvailable:Bool

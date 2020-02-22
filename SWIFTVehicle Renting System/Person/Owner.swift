@@ -7,7 +7,7 @@
 //
 
 import Foundation
-class Owner:Person, Codable
+class Owner:Person//, Codable
 {
     var id: String
     

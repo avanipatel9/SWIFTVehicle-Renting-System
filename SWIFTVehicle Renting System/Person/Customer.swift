@@ -7,7 +7,8 @@
 //
 
 import Foundation
-class Customer: Person, Codable  {
+class Customer: Person//, Codable
+{
     
     var id: String
 
@@ -52,23 +53,12 @@ class Customer: Person, Codable  {
         self.emailID = emailID
         self.userName = userName
         self.password = password
-        //self.age = Calendar.current.dateComponents([.year], from: birthDate,to: Date()).year!
         self.address = address
         self.city = city
         self.address = address
         self.city = city
     }
     
-   /*func addCustomer(customerValue : Customer, firstName : String)
-    {
-        customerDetails.updateValue(customerValue, forKey: firstName)
-    }
-    
-   func removeCustomer(customerValue : Customer, firstName : String)
-    {
-        customerDetails.removeValue(forKey: firstName)
-    }
-       */
     func addVehicleListRented(vehicleRented: VehicleRent, vehicleIdentificationNumber: String)
     {
         vehicleListRented.updateValue(vehicleRented, forKey: vehicleIdentificationNumber)
@@ -86,12 +76,12 @@ class Customer: Person, Codable  {
         print("\t Last Name: \(self.lastName)")
         print("\t Gender : \(self.gender)")
         print("\t Mobile Number : \(self.mobileNumber)")
-        print("\t BirthDate : \(String(describing: self.birthDate))")
+        print("\t BirthDate : \(self.birthDate!.getForamttedDate())")
         print("\t Emaild ID : \(self.emailID)")
         print("\t User Name : \(self.userName)")
         //Add extension for password encrypt decrypt
         print("\t Password Encrypted : \(self.password)")
         print("\t Password Decrypted : \(self.password)")
-        print("\t Age : \(String(describing: self.age))")
+        print("\t Age : \(self.age!)")
     }
 }

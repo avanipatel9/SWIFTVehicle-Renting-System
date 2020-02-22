@@ -8,7 +8,7 @@
 
 import Foundation
 
-class Car: Vehicle, Codable
+class Car: Vehicle//, Codable
 {
     
     var vehicleIdentificationNumber: String
@@ -34,16 +34,6 @@ class Car: Vehicle, Codable
     var ratePerDay: RatePerDay
     
     var ratePerKm: RatePerKM
-    
-    
-    
-   
-    
-    func DisplayAvailableVehicleToRent() {
-        print("dd")
-    }
-    
-    
     
     var carType : String
     var carColor : String
@@ -76,7 +66,6 @@ class Car: Vehicle, Codable
         print("Number of seats : \(self.numberOfSeat)")
         print("Fuel Type : \(self.fuelType)")
         print("Is Vehicle Rented : \(self.isVehicleRented)")
-        
         print("Car Type : \(self.carType)")
         print("Car Color : \(self.carColor)")
     }

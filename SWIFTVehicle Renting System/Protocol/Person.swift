@@ -8,7 +8,7 @@
 
 import Foundation
 
-enum Gender: String, Codable
+enum Gender: String//, Codable
 {
     case Male, Female, Other
 }

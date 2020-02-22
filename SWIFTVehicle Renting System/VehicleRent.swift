@@ -7,7 +7,7 @@
 //
 
 import Foundation
-struct VehicleRent:IDisplay, Codable
+struct VehicleRent:IDisplay//, Codable
 {
     func Display() {
         
@@ -16,7 +16,7 @@ struct VehicleRent:IDisplay, Codable
     var startDate:Date?
     var endDate:Date?
     var noOfDaysRented:Int
-    var vehicle:Car
+    var vehicle:Vehicle
     var noOfKmDrived:Double
     var totalBillToPay:Double
     {
@@ -24,7 +24,7 @@ struct VehicleRent:IDisplay, Codable
     }
     //lazy var vehiclesRented = [String: Vehicle]()
     
-    init(startDate:Date,endDate:Date,vechile:Car,noOfKmDrived:Double) {
+    init(startDate:Date,endDate:Date,vechile:Vehicle,noOfKmDrived:Double) {
         self.startDate=startDate
         self.endDate=endDate
         self.noOfDaysRented=Calendar.current.dateComponents([.day], from: startDate,to: endDate).day!
@@ -33,9 +33,9 @@ struct VehicleRent:IDisplay, Codable
         // self.totalBillToPay=totalBillToPay
     }
     
-     init(from decoder: Decoder) throws {
-        fatalError("init(from:) has not been implemented")
-    }
+//     init(from decoder: Decoder) throws {
+//        fatalError("init(from:) has not been implemented")
+//    }
     
 //    mutating func addVehicleRented(vehicle: Vehicle, vehicleIdentificationNumber: String)
 //    {
@@ -46,5 +46,4 @@ struct VehicleRent:IDisplay, Codable
 //      {
 //          vehiclesRented.removeValue(forKey: vehicleIdentificationNumber)
 //      }
-    
 }
