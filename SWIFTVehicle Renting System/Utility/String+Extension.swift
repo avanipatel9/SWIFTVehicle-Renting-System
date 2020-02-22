@@ -23,4 +23,13 @@ extension String
         let phoneTest = NSPredicate(format: "SELF MATCHES %@", PHONE_REGEX)
         return phoneTest.evaluate(with: self)
     }
+    
+    func encryptPassword()
+    {
+        let password = "Password"
+        let encryptMsg = "MessageToEncrypt"
+        
+        
+    }
+    
 }
