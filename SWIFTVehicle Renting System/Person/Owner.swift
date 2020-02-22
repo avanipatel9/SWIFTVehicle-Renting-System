@@ -62,13 +62,13 @@ class Owner:Person//, Codable
         print("Last Name: \(self.lastName)")
         print("Gender : \(self.gender)")
         print("Mobile Number : \(self.mobileNumber)")
-        print("BirthDate : \(self.birthDate!)")
+        print("BirthDate : \(self.birthDate!.getForamttedDate())")
         print("Emaild ID : \(self.emailID)")
         print("User Name : \(self.userName)")
         //Add extension for password encrypt decrypt
         print("Password Encrypted : \(self.password)")
         print("Password Decrypted : \(self.password)")
-        print("Age : \(self.age)")
+        print("Age : \(self.age!)")
         
         
     }
