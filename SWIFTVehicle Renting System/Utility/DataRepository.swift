@@ -11,14 +11,20 @@ import Foundation
 //Singleton class
 class DataRepository
 {
-  static private  var repo = DataRepository()
-   private  var vehicleList=Dictionary<String,Vehicle> ()
-   private init() {
+    static private  var repo = DataRepository()
+    private var customerList=Dictionary<String,Customer>()
+    private  var vehicleList=Dictionary<String,Vehicle> ()
+    private init() {
         
     }
     
-   static func getInstance()->DataRepository{
-    return repo
+    static func getInstance()->DataRepository{
+        return repo
+    }
+    
+    func addCustomer(customer:Customer)
+    {
+        self.customerList.updateValue(customer, forKey: customer.id)
     }
     
     func addVehicle(vehicle:Vehicle)
