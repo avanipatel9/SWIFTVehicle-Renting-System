@@ -30,7 +30,7 @@ class Driver:Person//, Codable
     
     var age: Int?
     {
-        return 0
+        return Calendar.current.dateComponents([.year], from: birthDate!,to: Date()).year
     }
     
     var drivingLicenceNumber : String
