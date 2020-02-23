@@ -115,16 +115,22 @@ dr.addVehicle(vehicle: car5)
 do
 {
     let o1 = try Owner(id: "O001", firstName: "Veronica", lastName: "Joe", gender: .Female, mobileNumber: "7894562580", birthDate: Date.from(year: 1983, month: 04, day: 25)!, emailID: "ver34Joe@gmail.com", userName: "Joe45", password: "Fcx4TG", companyTitle: "Engine Way", landlineNumber: "9854172", website: "engineWay@gmail.ca")
+    o1.addVehicleOwned(o1.id,b1)
+     o1.addVehicleOwned(o1.id,m1)
 }
 
 do
 {
     let o2 = try Owner(id: "O002", firstName: "Urban", lastName: "Emblem", gender: .Male, mobileNumber: "322-77-2384", birthDate: Date.from(year: 1976, month: 07, day: 21)!, emailID: "uemblem0@cornell.edu", userName: "uemblem0", password: "mK0rf9lk", companyTitle: "Rohan-Kub", landlineNumber: "7894562", website: "RohanKubb@gmail.com")
+       o2.addVehicleOwned(o2.id,car1)
 }
 
 do
 {
     let o3 = try Owner(id: "O003", firstName: "Caria", lastName: "Woolmer", gender: .Male, mobileNumber: "322-77-2384", birthDate: Date.from(year: 1986, month: 07, day: 05)!, emailID: "cwoolmer0@geocities.com", userName: "cwoolmer0", password: "gDtPy0D", companyTitle: "Gottlieb-Bosco", landlineNumber: "7892062", website: "https://hhs.gov/consequat/varius.jsp")
+      o3.addVehicleOwned(o3.id,b2)
+     o3.addVehicleOwned(o3.id,m2)
+     o3.addVehicleOwned(o3.id,m3)
 }
 
 do
@@ -159,7 +165,6 @@ let vr2 = VehicleRent(startDate: Date.from(year: 2020, month: 02, day: 21)!, end
 //Create Customers
 do{
     let c1 = try Customer(id: "C001", firstName: "Cristen", lastName: "Little", gender: .Female, mobileNumber: "6471202489", birthDate: Date.from(year: 1993, month: 01, day: 15)!, emailID: "cristen.little@gmail.com", userName: "Cristen123", password: "pasword", address: "18 Young Street", city: "Toronto")
-    
     c1.addVehicleListRented(vehicleRented: vr1, vehicleIdentificationNumber:vr1.vehicle.vehicleIdentificationNumber )
     dr.addCustomer(customer: c1)
     c1.Display()
