@@ -94,13 +94,16 @@ dr.addVehicle(vehicle: b5)
 
 //Create vehicleRent object
 let vr1 = VehicleRent(startDate: Date.from(year: 2019, month: 07, day: 27)!, endDate: Date.from(year: 2019, month: 07, day: 30)!, vechile: car1, noOfKmDrived: 50.0)
-
 let vr2 = VehicleRent(startDate: Date.from(year: 2020, month: 02, day: 21)!, endDate: Date.from(year: 2020, month: 02, day: 23)!, vechile: b1, noOfKmDrived: 500.0)
-
 let vr3 = VehicleRent(startDate: Date.from(year: 2018, month: 04, day: 01)!, endDate: Date.from(year: 2018, month: 04, day: 05)!, vechile: b2, noOfKmDrived: 1500.0)
 let vr4 = VehicleRent(startDate: Date.from(year: 2019, month: 05, day: 27)!, endDate: Date.from(year: 2019, month: 05, day: 28)!, vechile: car2, noOfKmDrived: 200.0)
 let vr5 = VehicleRent(startDate: Date.from(year: 2019, month: 03, day: 17)!, endDate: Date.from(year: 2019, month: 03, day: 21)!, vechile: m1, noOfKmDrived: 50.0)
 let vr6 = VehicleRent(startDate: Date.from(year: 2018, month: 01, day: 25)!, endDate: Date.from(year: 2018, month: 01, day: 27)!, vechile: m2, noOfKmDrived: 40.0)
+let vr7 = VehicleRent(startDate: Date.from(year: 2019, month: 06, day: 05)!, endDate: Date.from(year: 2019, month: 06, day: 08)!, vechile: b3, noOfKmDrived: 1000.0)
+let vr8 = VehicleRent(startDate: Date.from(year: 2019, month: 08, day: 09)!, endDate: Date.from(year: 2019, month: 08, day: 10)!, vechile: m3, noOfKmDrived: 60.0)
+let vr9 = VehicleRent(startDate: Date.from(year: 2019, month: 09, day: 03)!, endDate: Date.from(year: 2019, month: 09, day: 06)!, vechile: car3, noOfKmDrived: 1100.0)
+let vr10 = VehicleRent(startDate: Date.from(year: 2018, month: 10, day: 25)!, endDate: Date.from(year: 2018, month: 10, day: 27)!, vechile: b4, noOfKmDrived: 2000.0)
+let vr11 = VehicleRent(startDate: Date.from(year: 2017, month: 11, day: 17)!, endDate: Date.from(year: 2017, month: 11, day: 19)!, vechile: b5, noOfKmDrived: 1500.0)
 
 //create owner
 do
@@ -108,6 +111,7 @@ do
     let o1 = try Owner(id: "O001", firstName: "Veronica", lastName: "Joe", gender: .Female, mobileNumber: "7894562580", birthDate: Date.from(year: 1983, month: 04, day: 25)!, emailID: "ver34Joe@gmail.com", userName: "Joe45", password: "Fcx4TG", companyTitle: "Engine Way", landlineNumber: "9854172", website: "engineWay@gmail.ca")
     o1.addVehicleOwned(id: o1.id, vehicle: b1)
     o1.addVehicleOwned(id: o1.id, vehicle: m1)
+    o1.addVehicleOwned(id: o1.id, vehicle: car2)
 }
 
 do
@@ -175,19 +179,21 @@ do{
 do{
     
     let c2 = try Customer(id: "C002", firstName: "Wes", lastName: "Dundon", gender: .Male, mobileNumber: "458369127", birthDate: Date.from(year: 2005, month: 02, day: 20)!, emailID: "wes@gmail.com", userName: "wes45", password: "wes@12345", address: "55 Huntario Street", city: "Brampton")
-    
+    c2.addVehicleListRented(vehicleRented: vr10, vehicleIdentificationNumber: vr10.vehicle.vehicleIdentificationNumber)
     c2.Display()
 }
 
 do{
     let c3 = try Customer(id: "C003", firstName: "Merrick", lastName: "Dondon", gender: .Male, mobileNumber: "6478952146", birthDate: Date.from(year: 1997, month: 05, day: 24)!, emailID: "merrick@gmail.com", userName: "merricl45", password: "merrickD", address: "8,Derry Road", city: "Toronto")
-    
+    c3.addVehicleListRented(vehicleRented: vr8, vehicleIdentificationNumber: vr8.vehicle.vehicleIdentificationNumber)
+    c3.addVehicleListRented(vehicleRented: vr9, vehicleIdentificationNumber: vr9.vehicle.vehicleIdentificationNumber)
+    c3.addVehicleListRented(vehicleRented: vr7, vehicleIdentificationNumber: vr7.vehicle.vehicleIdentificationNumber)
     c3.Display()
 }
 
 do{
     let c4 = try Customer(id: "C004", firstName: "Samuel", lastName: "Nichol", gender: .Male, mobileNumber: "587963147", birthDate: Date.from(year: 1996, month: 08, day: 08)!, emailID: "samuel@gmail.com", userName: "Samuel_09", password: "samuel09", address: "798,Westwood", city: "Missisagua")
-    
+    c4.addVehicleListRented(vehicleRented: vr11, vehicleIdentificationNumber: vr11.vehicle.vehicleIdentificationNumber)
     c4.Display()
 }
 do{
