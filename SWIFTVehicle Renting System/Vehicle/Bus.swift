@@ -29,13 +29,13 @@ class Bus:Vehicle//, Codable
     
     var isVehicleRented: Bool
     
-   var ratePerDay: RatePerDay
-   
-   var ratePerKm: RatePerKM
+    var ratePerDay: RatePerDay
+    
+    var ratePerKm: RatePerKM
     
     var busType:String
     var isServiceAvailable:Bool
-    var   isWifiAvailable:Bool
+    var isWifiAvailable:Bool
     
     //Initializer
     init(vehicleIdentificationNumber: String, vehicleDescription: String, manufacturerName: String,isSelfDrive: Bool, isInsured: Bool, insuranceProviderName: String, numberOfSeat: Int, fuelType: FuelType,isVehicleRented: Bool,busType:String,isServiceAvailable:Bool,isWIfiAvailable:Bool)
@@ -54,6 +54,11 @@ class Bus:Vehicle//, Codable
         self.isVehicleRented=isVehicleRented
         self.ratePerDay=RatePerDay.BUS
         self.ratePerKm=RatePerKM.BUS
+    }
+    
+    func setDriver(driver: Driver)
+    {
+        self.driver = driver
     }
     
     func Display()

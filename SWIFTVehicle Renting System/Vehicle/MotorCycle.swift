@@ -53,6 +53,11 @@ class MotorCycle : Vehicle//, Codable
         self.ratePerKm=RatePerKM.MOTORCYCLE
     }
     
+    func setDriver(driver: Driver)
+    {
+        self.driver = driver
+    }
+    
     func Display()
     {
         print("-----------Vehicle Type : Motorcycle ------------")

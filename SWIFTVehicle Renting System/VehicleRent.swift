@@ -28,22 +28,11 @@ struct VehicleRent:IDisplay//, Codable
         self.endDate=endDate
         self.noOfKmDrived=noOfKmDrived
         self.vehicle=vechile
-        // self.totalBillToPay=totalBillToPay
     }
     
-//     init(from decoder: Decoder) throws {
-//        fatalError("init(from:) has not been implemented")
-//    }
-    
-//    mutating func addVehicleRented(vehicle: Vehicle, vehicleIdentificationNumber: String)
-//    {
-//        vehiclesRented.updateValue(vehicle, forKey: vehicleIdentificationNumber)
-//    }
-//
-//   mutating func removeVehcleRented(vehicle: Vehicle, vehicleIdentificationNumber: String)
-//      {
-//          vehiclesRented.removeValue(forKey: vehicleIdentificationNumber)
-//      }
+    //     init(from decoder: Decoder) throws {
+    //        fatalError("init(from:) has not been implemented")
+    //    }
     
     func Display()
     {

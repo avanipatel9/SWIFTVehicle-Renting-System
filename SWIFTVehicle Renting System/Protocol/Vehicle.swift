@@ -38,6 +38,7 @@ protocol Vehicle:IDisplay//, Codable
     var ratePerDay: RatePerDay {get}
     var ratePerKm: RatePerKM{get}
     
+    func setDriver(driver: Driver)
     
     func Display()
     

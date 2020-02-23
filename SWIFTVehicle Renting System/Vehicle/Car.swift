@@ -52,13 +52,12 @@ class Car: Vehicle//, Codable
         self.isVehicleRented=isVehicleRented
         self.ratePerDay=RatePerDay.CAR
         self.ratePerKm=RatePerKM.CAR
-}
+    }
+    
     func setDriver(driver: Driver)
     {
         self.driver = driver
     }
-    
-    
     
     func Display()
     {

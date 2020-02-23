@@ -39,8 +39,8 @@ class Owner:Person//, Codable
     var fullName:String{
         return "\(firstName) \(lastName)"
     }
- 
-  
+    
+    
     
     init(id:String, firstName: String, lastName: String, gender: Gender, mobileNumber: String, birthDate: Date, emailID: String, userName: String, password: String, companyTitle:String, landlineNumber:String, website:String)
     {
@@ -61,7 +61,7 @@ class Owner:Person//, Codable
     
     func addVehicleOwned(id:String,vehicle:Vehicle)
     {
-         self.vehicleListOwned.updateValue(vehicle, forKey: id)
+        self.vehicleListOwned.updateValue(vehicle, forKey: id)
         
     }
     

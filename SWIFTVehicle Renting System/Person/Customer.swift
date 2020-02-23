@@ -11,7 +11,7 @@ class Customer: Person//, Codable
 {
     
     var id: String
-
+    
     var firstName: String
     
     var lastName: String
@@ -39,7 +39,7 @@ class Customer: Person//, Codable
     //lazy var customerDetails = [String : Customer]()
     
     lazy var vehicleListRented = [String : VehicleRent]()
-   
+    
     
     init(id:String, firstName: String, lastName: String, gender: Gender, mobileNumber: String, birthDate: Date, emailID: String, userName: String, password: String, address: String, city: String) throws
     {
@@ -69,7 +69,7 @@ class Customer: Person//, Codable
         vehicleListRented.removeValue(forKey: vehicleIdentificationNumber)
     }
     
-
+    
     
     func Display()
     {
