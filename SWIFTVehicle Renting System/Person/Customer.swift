@@ -96,7 +96,9 @@ class Customer: Person//, Codable
         }
         else
         {
-            print("No vehicle found")
+            print("-----------------------------------------------")
+            print("\t \t No vehicle found for this customer")
+            print("-----------------------------------------------")
         }
     }
 }
