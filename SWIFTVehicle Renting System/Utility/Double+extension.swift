@@ -1,5 +1,5 @@
 import Foundation
-extension Float
+extension Double
 {
 func addDollarToBill()->String
     {
