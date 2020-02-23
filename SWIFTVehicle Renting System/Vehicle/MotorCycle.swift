@@ -55,19 +55,20 @@ class MotorCycle : Vehicle//, Codable
     
     func Display()
     {
-        print("VehicleIdentificationNumber : \(self.vehicleIdentificationNumber)")
-        print("Vehile Description : \(self.vehicleDescription)")
-        print("Manufacturer Name : \(self.manufacturerName)")
-        print("is self Drive : \(self.isSelfDrive)")
-        print("Driver : \(self.driver)")
-        print("is Insured : \(self.isInsured)")
-        print("Insurance Provider Name : \(self.insuranceProviderName)")
-        print("Number of seats : \(self.numberOfSeat)")
-        print("Fuel Type : \(self.fuelType)")
-        print("Is Vehicle Rented : \(self.isVehicleRented)")
-        
-        print("Max Top Speed : \(self.maxTopSpeed)")
-        print("Milage : \(self.milage)")
+        print("-----------Vehicle Type : Motorcycle ------------")
+        print("\t VehicleIdentificationNumber : \(self.vehicleIdentificationNumber)")
+        print("\t Vehile Description : \(self.vehicleDescription)")
+        print("\t Manufacturer Name : \(self.manufacturerName)")
+        print("\t is self Drive : \(self.isSelfDrive)")
+        print("\t Driver : \(self.driver)")
+        print("\t Insurance Provider Name : \(self.insuranceProviderName)")
+        print("\t Number of seats : \(self.numberOfSeat)")
+        print("\t Fuel Type : \(self.fuelType)")
+        print("\t Is Vehicle Rented : \(self.isVehicleRented)")
+        print("\t Rate/Day : \(self.ratePerDay)")
+        print("\t Rate/KM : \(self.ratePerKm)")
+        print("\t Max Top Speed : \(self.maxTopSpeed)")
+        print("\t Milage : \(self.milage)")
         
     }
 }

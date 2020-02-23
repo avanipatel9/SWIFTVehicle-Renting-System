@@ -9,13 +9,12 @@
 import Foundation
 struct VehicleRent:IDisplay//, Codable
 {
-    func Display() {
-        
-    }
-    
     var startDate:Date?
     var endDate:Date?
     var noOfDaysRented:Int
+    {
+        return Calendar.current.dateComponents([.day], from: startDate!,to: endDate!).day!
+    }
     var vehicle:Vehicle
     var noOfKmDrived:Double
     var totalBillToPay:Double
@@ -27,7 +26,6 @@ struct VehicleRent:IDisplay//, Codable
     init(startDate:Date,endDate:Date,vechile:Vehicle,noOfKmDrived:Double) {
         self.startDate=startDate
         self.endDate=endDate
-        self.noOfDaysRented=Calendar.current.dateComponents([.day], from: startDate,to: endDate).day!
         self.noOfKmDrived=noOfKmDrived
         self.vehicle=vechile
         // self.totalBillToPay=totalBillToPay
@@ -46,4 +44,15 @@ struct VehicleRent:IDisplay//, Codable
 //      {
 //          vehiclesRented.removeValue(forKey: vehicleIdentificationNumber)
 //      }
+    
+    func Display()
+    {
+        self.vehicle.Display()
+        print("-----------------------------------------------")
+        print("\t \t Rent Start Date : \(self.startDate!)")
+        print("\t \t Rent End Date : \(self.endDate!)")
+        print("\t \t No. of days to rent : \(noOfDaysRented)")
+        print("\t \t No. of KM drived : \(self.noOfKmDrived)")
+        print("\t \t Total Bill to Pay : \(self.totalBillToPay)")
+    }
 }

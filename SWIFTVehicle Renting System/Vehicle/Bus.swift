@@ -58,20 +58,22 @@ class Bus:Vehicle//, Codable
     
     func Display()
     {
-        print("VehicleIdentificationNumber : \(self.vehicleIdentificationNumber)")
-        print("Vehile Description : \(self.vehicleDescription)")
-        print("Manufacturer Name : \(self.manufacturerName)")
-        print("is self Drive : \(self.isSelfDrive)")
-        print("Driver : \(self.driver)")
-        print("is Insured : \(self.isInsured)")
-        print("Insurance Provider Name : \(self.insuranceProviderName)")
-        print("Number of seats : \(self.numberOfSeat)")
-        print("Fuel Type : \(self.fuelType)")
-        print("Is Vehicle Rented : \(self.isVehicleRented)")
-        
-        print("Bus Type : \(self.busType)")
-        print("isServiceAvailable : \(self.isServiceAvailable)")
-        print("isWifiAvailable : \(self.isServiceAvailable)")
+        print("---------Vehicle Type : Bus ----------")
+        print("\t VehicleIdentificationNumber : \(self.vehicleIdentificationNumber)")
+        print("\t Vehile Description : \(self.vehicleDescription)")
+        print("\t Manufacturer Name : \(self.manufacturerName)")
+        print("\t is self Drive : \(self.isSelfDrive)")
+        print("\t Driver : \(self.driver)")
+        print("\t is Insured : \(self.isInsured)")
+        print("\t Insurance Provider Name : \(self.insuranceProviderName)")
+        print("\t Number of seats : \(self.numberOfSeat)")
+        print("\t Fuel Type : \(self.fuelType)")
+        print("\t Is Vehicle Rented : \(self.isVehicleRented)")
+        print("\t Rate/Day : \(self.ratePerDay)")
+        print("\t Rate/KM : \(self.ratePerKm)")
+        print("\t Bus Type : \(self.busType)")
+        print("\t isServiceAvailable : \(self.isServiceAvailable)")
+        print("\t isWifiAvailable : \(self.isServiceAvailable)")
         
     }
 }

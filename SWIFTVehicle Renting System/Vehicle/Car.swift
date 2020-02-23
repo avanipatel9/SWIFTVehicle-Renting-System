@@ -53,20 +53,29 @@ class Car: Vehicle//, Codable
         self.ratePerDay=RatePerDay.CAR
         self.ratePerKm=RatePerKM.CAR
 }
+    func setDriver(driver: Driver)
+    {
+        self.driver = driver
+    }
+    
+    
     
     func Display()
     {
-        print("VehicleIdentificationNumber : \(self.vehicleIdentificationNumber)")
-        print("Vehile Description : \(self.vehicleDescription)")
-        print("Manufacturer Name : \(self.manufacturerName)")
-        print("is self Drive : \(self.isSelfDrive)")
-        print("Driver : \(self.driver?.firstName)")
-        print("is Insured : \(self.isInsured)")
-        print("Insurance Provider Name : \(self.insuranceProviderName)")
-        print("Number of seats : \(self.numberOfSeat)")
-        print("Fuel Type : \(self.fuelType)")
-        print("Is Vehicle Rented : \(self.isVehicleRented)")
-        print("Car Type : \(self.carType)")
-        print("Car Color : \(self.carColor)")
+        print("--------------Vehicle Type : Car ---------------")
+        print("\t VehicleIdentificationNumber : \(self.vehicleIdentificationNumber)")
+        print("\t Vehile Description : \(self.vehicleDescription)")
+        print("\t Manufacturer Name : \(self.manufacturerName)")
+        print("\t is self Drive : \(self.isSelfDrive)")
+        print("\t Driver : \(self.driver)")
+        print("\t is Insured : \(self.isInsured)")
+        print("\t Insurance Provider Name : \(self.insuranceProviderName)")
+        print("\t Number of seats : \(self.numberOfSeat)")
+        print("\t Fuel Type : \(self.fuelType)")
+        print("\t Is Vehicle Rented : \(self.isVehicleRented)")
+        print("\t Rate/Day : \(self.ratePerDay)")
+        print("\t Rate/KM : \(self.ratePerKm)")
+        print("\t Car Type : \(self.carType)")
+        print("\t Car Color : \(self.carColor)")
     }
 }

@@ -159,6 +159,7 @@ let vr2 = VehicleRent(startDate: Date.from(year: 2020, month: 02, day: 21)!, end
 //Create Customers
 do{
     let c1 = try Customer(id: "C001", firstName: "Cristen", lastName: "Little", gender: .Female, mobileNumber: "6471202489", birthDate: Date.from(year: 1993, month: 01, day: 15)!, emailID: "cristen.little@gmail.com", userName: "Cristen123", password: "pasword", address: "18 Young Street", city: "Toronto")
+    
     c1.addVehicleListRented(vehicleRented: vr1, vehicleIdentificationNumber:vr1.vehicle.vehicleIdentificationNumber )
     dr.addCustomer(customer: c1)
     c1.Display()
