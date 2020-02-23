@@ -90,6 +90,7 @@ class Customer: Person//, Codable
         {
             for vehicle in vehicleListRented
             {
+                print("-----------------------------------------------")
                 vehicle.value.Display()
             }
         }
