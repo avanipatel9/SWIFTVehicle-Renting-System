@@ -22,6 +22,50 @@ class DataRepository
         return repo
     }
     
+    func createOwners()
+    {
+        do
+        {
+            let o1 = try Owner(id: "O001", firstName: "Veronica", lastName: "Joe", gender: .Female, mobileNumber: "7894562580", birthDate: Date.from(year: 1983, month: 04, day: 25)!, emailID: "ver34Joe@gmail.com", userName: "Joe45", password: "Fcx4TG", companyTitle: "Engine Way", landlineNumber: "9854172", website: "engineWay@gmail.ca")
+            o1.addVehicleOwned(id: o1.id, vehicle: b1)
+            o1.addVehicleOwned(id: o1.id, vehicle: m1)
+            o1.addVehicleOwned(id: o1.id, vehicle: car1)
+        }
+
+        do
+        {
+            let o2 = try Owner(id: "O002", firstName: "Urban", lastName: "Emblem", gender: .Male, mobileNumber: "322-77-2384", birthDate: Date.from(year: 1976, month: 07, day: 21)!, emailID: "uemblem0@cornell.edu", userName: "uemblem0", password: "mK0rf9lk", companyTitle: "Rohan-Kub", landlineNumber: "7894562", website: "RohanKubb@gmail.com")
+            o2.addVehicleOwned(id: o2.id, vehicle: car2)
+            o2.addVehicleOwned(id: o2.id, vehicle: b2)
+            o2.addVehicleOwned(id: o2.id, vehicle: m2)
+        }
+
+        do
+        {
+            let o3 = try Owner(id: "O003", firstName: "Caria", lastName: "Woolmer", gender: .Male, mobileNumber: "322-77-2384", birthDate: Date.from(year: 1986, month: 07, day: 05)!, emailID: "cwoolmer0@geocities.com", userName: "cwoolmer0", password: "gDtPy0D", companyTitle: "Gottlieb-Bosco", landlineNumber: "7892062", website: "https://hhs.gov/consequat/varius.jsp")
+            o3.addVehicleOwned(id: o3.id, vehicle: b2)
+            o3.addVehicleOwned(id: o3.id, vehicle: m3)
+            o3.addVehicleOwned(id: o3.id, vehicle: car3)
+        }
+
+        do
+        {
+            let o4 = try Owner(id: "O004", firstName: "Barnie", lastName: "Durban", gender: .Female, mobileNumber: "658-35-7684", birthDate: Date.from(year: 1996, month: 06, day: 12)!, emailID: "bdurban1@samsung.com", userName: "bdurban1", password: "OJPJvWo", companyTitle: "Hodkiewicz Inc", landlineNumber: "6292062", website: "    https://nps.gov/aenean/auctor/gravida/sem.json")
+            o4.addVehicleOwned(id: o4.id, vehicle: b4)
+            o4.addVehicleOwned(id: o4.id, vehicle: m4)
+            o4.addVehicleOwned(id: o4.id, vehicle: car4)
+        }
+
+        do
+        {
+            let o5 = try Owner(id: "O005", firstName: "Abbey", lastName: "Exeter", gender: .Male, mobileNumber: "    407-15-7693", birthDate: Date.from(year: 1986, month: 02, day: 12)!, emailID: "    aexeter3@artisteer.com", userName: "aexeter3", password: "p6S5y5XvJUv4", companyTitle: "Ebert and Sons", landlineNumber:"277-40-4078", website: "    https://yolasite.com/at/turpis/a/pede.js")
+            o5.addVehicleOwned(id: o5.id, vehicle: b5)
+            o5.addVehicleOwned(id: o5.id, vehicle: m5)
+            o5.addVehicleOwned(id: o5.id, vehicle: car5)
+        }
+
+    }
+    
     func createCustomers()
     {
         do{
