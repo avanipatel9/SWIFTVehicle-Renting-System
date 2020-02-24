@@ -52,17 +52,7 @@ class Driver:Person//, Codable
         self.mobileNumber=mobileNumber
         //self.mobileNumber = mobileNumber
         self.birthDate = birthDate
-        if isEmailValid(email: emailID)
-           {
-              
-               self.emailID=emailID
-           }
-            else
-            {
-                print("Invalid Email ID for \(self.firstName) : \(emailID) ")
-                throw CustomException.invalidEmail
-        
-            }
+       
         //self.emailID = emailID
         self.userName = userName
         self.password = password
@@ -70,6 +60,17 @@ class Driver:Person//, Codable
         self.drivingLicenceNumber = drivingLicenceNumber
         self.isHistroyCleared = isHistroyCleared
         self.salary = salary
+        if isEmailValid(email: emailID)
+                  {
+                     
+                      self.emailID=emailID
+                  }
+                   else
+                   {
+                       print("Invalid Email ID for \(self.firstName) : \(emailID) ")
+                       throw CustomException.invalidEmail
+               
+                   }
     }
     
     func isEmailValid(email:String)  -> Bool {

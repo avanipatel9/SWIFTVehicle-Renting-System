@@ -21,7 +21,7 @@ protocol Person:IDisplay
     var gender : Gender { get set }
     var mobileNumber : String { get set }
     var birthDate : Date? { get set }
-    var emailID : String { get set }
+    var emailID : String? { get set }
     var userName : String { get set }
     var password : String { get set }
     var age:Int? { get }
