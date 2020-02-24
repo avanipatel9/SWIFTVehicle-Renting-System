@@ -1,7 +1,7 @@
 import Foundation
 extension Double
 {
-func addDollarToBill()->String
+func currency()->String
     {
         return "$\(self)"
     }

@@ -42,6 +42,6 @@ struct VehicleRent:IDisplay//, Codable
         print("\t \t Rent End Date : \(self.endDate!.getForamttedDate())")
         print("\t \t No. of days to rent : \(noOfDaysRented.days())")
         print("\t \t No. of KM drived : \(self.noOfKmDrived.kiloMeter())")
-        print("\t \t Total Bill to Pay : \(self.totalBillToPay.addDollarToBill())")
+        print("\t \t Total Bill to Pay : \(self.totalBillToPay.currency())")
     }
 }

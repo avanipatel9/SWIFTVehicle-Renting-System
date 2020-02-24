@@ -80,8 +80,8 @@ class Car: Vehicle//, Codable
         print("\t Number of seats : \(self.numberOfSeat)")
         print("\t Fuel Type : \(self.fuelType)")
         //print("\t Is Vehicle Rented : \(self.isVehicleRented)")
-        print("\t Rate/Day : \(self.ratePerDay)")
-        print("\t Rate/KM : \(self.ratePerKm)")
+        print("\t Rate/Day : \(self.ratePerDay.rawValue.currency())")
+        print("\t Rate/KM : \(self.ratePerKm.rawValue.currency())")
         print("\t Car Type : \(self.carType)")
         print("\t Car Color : \(self.carColor)")
     }

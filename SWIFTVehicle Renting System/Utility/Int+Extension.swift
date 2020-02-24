@@ -15,4 +15,7 @@ extension Int
         let s = String.init(format: "%d Days", self)
         return s
     }
+    func currency() -> String {
+        return "$\(self)"
+    }
 }
