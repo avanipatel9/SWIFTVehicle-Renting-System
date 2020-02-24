@@ -81,16 +81,20 @@ class Driver:Person//, Codable
     }
     
     func Display() {
-        print("First Name : \(self.firstName)")
-        print("Last Name: \(self.lastName)")
-        print("Gender : \(self.gender)")
-        print("Mobile Number : \(self.mobileNumber)")
-        print("BirthDate : \(self.birthDate!.getForamttedDate())")
-        print("Emaild ID : \(self.emailID ?? "nil")")
-        print("User Name : \(self.userName)")
+        print("\t-----------------------------------------------")
+        print("\t--------------Driver Details---------------")
+        print("\t First Name : \(self.firstName)")
+        print("\t Last Name: \(self.lastName)")
+        print("\t Gender : \(self.gender)")
+        print("\t Mobile Number : \(self.mobileNumber)")
+        print("\t BirthDate : \(self.birthDate!.getForamttedDate())")
+        print("\t Emaild ID : \(self.emailID ?? "nil")")
+        print("\t User Name : \(self.userName)")
         //Add extension for password encrypt decrypt
-        print("Password Encrypted : \(self.password)")
-        print("Password Decrypted : \(self.password)")
-        print("Age : \(self.age!)")
+        print("\t Password Encrypted : \(self.password)")
+        print("\t Password Decrypted : \(self.password)")
+        print("\t Age : \(self.age!)")
+        print("\t Driving Licence Number : \(self.drivingLicenceNumber)")
     }
+    
 }

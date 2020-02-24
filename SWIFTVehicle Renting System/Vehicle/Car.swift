@@ -70,9 +70,8 @@ class Car: Vehicle//, Codable
         print("\t Manufacturer Name : \(self.manufacturerName)")
         if self.isSelfDrive==false
         {
-            print("\t-----------------------------------------------")
-            print("\t--------------Driver Details---------------")
-            self.driver!.Display()
+            print("\t is self Drive : No")
+            self.driver?.Display()
         }
         else
         {
