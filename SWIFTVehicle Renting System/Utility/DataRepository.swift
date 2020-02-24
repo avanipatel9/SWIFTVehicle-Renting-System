@@ -14,6 +14,7 @@ class DataRepository
     static private  var repo = DataRepository()
     private var customerList=Dictionary<String,Customer>()
     private  var vehicleList=Dictionary<String,Vehicle> ()
+    private var driverList=Dictionary<String,Driver>()
     private init() {
         
     }
@@ -26,6 +27,8 @@ class DataRepository
     {
         do{
             let d1 = try Driver(id: "D001", firstName: "Zora", lastName: "Ferris", gender: .Female, mobileNumber: "4796672909", birthDate: Date.from(year: 1998, month: 07, day: 05)!, emailID: "zferris0@disqus.com", userName: "zferris0", password: "EAtVnCuCe6Us", drivingLicenceNumber: "nzQq2Tx5g5HE", isHistroyCleared: true, salary: 127.62)
+            addDriver(driver: d1)
+            
         }
         catch CustomException.invalidEmail{
             
@@ -40,6 +43,7 @@ class DataRepository
         do
         {
             let d2 = try Driver(id: "D002", firstName: "Appolonia", lastName: "Cattroll", gender: .Female, mobileNumber: "8983450523", birthDate: Date.from(year: 1995, month: 11, day: 19)!, emailID: "acattroll1@psu.edu", userName: "acattroll1", password: "x9e6xnkMpBr3", drivingLicenceNumber: "NfL6HThI", isHistroyCleared: true, salary: 179.17)
+            addDriver(driver: d2)
         }
         catch CustomException.invalidEmail{
             
@@ -54,6 +58,7 @@ class DataRepository
         do
         {
             let d3 = try Driver(id: "D003", firstName: "Vernice", lastName: "McGougan", gender: .Female, mobileNumber: "4264923681", birthDate: Date.from(year: 1996, month: 09, day: 03)!, emailID: "vmcgougan2@umn.edu", userName: "vmcgougan2", password: "RE5IOBcVm", drivingLicenceNumber: "xxLTfp9", isHistroyCleared: true, salary: 147.80)
+            addDriver(driver: d3)
         }
         catch CustomException.invalidEmail{
             
@@ -68,6 +73,7 @@ class DataRepository
         do
         {
             let d4 = try Driver(id: "D004", firstName: "Quinn", lastName: "Popple", gender: .Female, mobileNumber: "9566019213", birthDate: Date.from(year: 1999, month: 10, day: 12)!, emailID: "qpopple3@google.fr", userName: "qpopple3", password: "B9luyIYcUh", drivingLicenceNumber: "dTKgyU6SD52", isHistroyCleared: true, salary: 169.15)
+            addDriver(driver: d4)
         }
         catch CustomException.invalidEmail{
             
@@ -82,6 +88,7 @@ class DataRepository
         do
         {
             let d5 = try Driver(id: "D005", firstName: "Samara", lastName: "Davenell", gender: .Female, mobileNumber: "9001558799", birthDate: Date.from(year: 1972, month: 11, day: 27)!, emailID: "sdavenell4@mlb.com", userName: "sdavenell4", password: "FZdE2ZnFVMb", drivingLicenceNumber: "HdGB1xhqPzGs", isHistroyCleared: false, salary: 177.47)
+            addDriver(driver: d5)
         }
         catch CustomException.invalidEmail{
             
@@ -207,6 +214,16 @@ class DataRepository
     func addVehicle(vehicle:Vehicle)
     {
         self.vehicleList.updateValue(vehicle, forKey: vehicle.vehicleIdentificationNumber)
+    }
+    
+    func addDriver(driver:Driver)
+    {
+        self.driverList.updateValue(driver, forKey: driver.id)
+    }
+    
+    func getDriver(id: String)->Driver?
+    {
+        self.driverList[id]
     }
     
     func getVehicle(vin:String)->Vehicle?

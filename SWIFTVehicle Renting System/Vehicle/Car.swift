@@ -38,13 +38,20 @@ class Car: Vehicle//, Codable
     var carType : String
     var carColor : String
     
-    init(vehicleIdentificationNumber: String, vehicleDescription: String, manufacturerName: String,isSelfDrive: Bool, isInsured: Bool, insuranceProviderName: String, numberOfSeat: Int, fuelType: FuelType,isVehicleRented: Bool, carType: String, carColor: String) {
+    init(vehicleIdentificationNumber: String, vehicleDescription: String, manufacturerName: String,isSelfDrive: Bool,driver: Driver?, isInsured: Bool, insuranceProviderName: String, numberOfSeat: Int, fuelType: FuelType,isVehicleRented: Bool, carType: String, carColor: String) {
         self.carType = carType
         self.carColor = carColor
         self.vehicleIdentificationNumber=vehicleIdentificationNumber
         self.vehicleDescription=vehicleDescription
         self.manufacturerName=manufacturerName
         self.isSelfDrive=isSelfDrive
+        if self.isSelfDrive==false{
+            self.driver=driver
+        }
+        else
+        {
+            self.driver = nil
+        }
         self.isInsured=isInsured
         self.insuranceProviderName=insuranceProviderName
         self.numberOfSeat=numberOfSeat
@@ -54,11 +61,6 @@ class Car: Vehicle//, Codable
         self.ratePerKm=RatePerKM.CAR
     }
     
-    func setDriver(driver: Driver)
-    {
-        self.driver = driver
-    }
-    
     func Display()
     {
         print("--------------Vehicle Type : Car ---------------")
@@ -66,10 +68,16 @@ class Car: Vehicle//, Codable
         print("\t VehicleIdentificationNumber : \(self.vehicleIdentificationNumber)")
         print("\t Vehile Description : \(self.vehicleDescription)")
         print("\t Manufacturer Name : \(self.manufacturerName)")
-        //print("\t is self Drive : \(self.isSelfDrive)")
-        //print("\t Driver : \(self.driver)")
-        //print("\t is Insured : \(self.isInsured)")
-        //print("\t Insurance Provider Name : \(self.insuranceProviderName)")
+        if self.isSelfDrive==false
+        {
+            print("\t-----------------------------------------------")
+            print("\t--------------Driver Details---------------")
+            self.driver!.Display()
+        }
+        else
+        {
+            print("\t is self Drive : Yes")
+        }
         print("\t Number of seats : \(self.numberOfSeat)")
         print("\t Fuel Type : \(self.fuelType)")
         //print("\t Is Vehicle Rented : \(self.isVehicleRented)")
