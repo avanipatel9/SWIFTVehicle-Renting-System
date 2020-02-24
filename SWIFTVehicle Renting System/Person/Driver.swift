@@ -37,7 +37,7 @@ class Driver:Person//, Codable
     var isHistroyCleared : Bool
     var salary : Double
     
-    init(id: String, firstName: String, lastName: String, gender: Gender, mobileNumber: String, birthDate: Date, emailID: String, userName: String, password: String, drivingLicenceNumber: String, isHistroyCleared: Bool, salary: Double)
+    init(id: String, firstName: String, lastName: String, gender: Gender, mobileNumber: String, birthDate: Date, emailID: String, userName: String, password: String, drivingLicenceNumber: String, isHistroyCleared: Bool, salary: Double) throws
     {
         self.id = id
         self.firstName = firstName
