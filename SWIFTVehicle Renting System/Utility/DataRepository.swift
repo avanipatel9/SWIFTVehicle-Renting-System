@@ -110,6 +110,15 @@ class DataRepository
             o1.addVehicleOwned(id: o1.id, vehicle: m1)
             o1.addVehicleOwned(id: o1.id, vehicle: car1)
         }
+        catch CustomException.invalidEmail{
+            
+        }
+        catch CustomException.invalidNumber{
+            
+        }
+        catch {
+            print("Exception Occurred")
+        }
 
         do
         {
@@ -117,6 +126,15 @@ class DataRepository
             o2.addVehicleOwned(id: o2.id, vehicle: car2)
             o2.addVehicleOwned(id: o2.id, vehicle: b2)
             o2.addVehicleOwned(id: o2.id, vehicle: m2)
+        }
+        catch CustomException.invalidEmail{
+            
+        }
+        catch CustomException.invalidNumber{
+            
+        }
+        catch {
+            print("Exception Occurred")
         }
 
         do
@@ -126,6 +144,15 @@ class DataRepository
             o3.addVehicleOwned(id: o3.id, vehicle: m3)
             o3.addVehicleOwned(id: o3.id, vehicle: car3)
         }
+        catch CustomException.invalidEmail{
+            
+        }
+        catch CustomException.invalidNumber{
+            
+        }
+        catch {
+            print("Exception Occurred")
+        }
 
         do
         {
@@ -134,6 +161,15 @@ class DataRepository
             o4.addVehicleOwned(id: o4.id, vehicle: m4)
             o4.addVehicleOwned(id: o4.id, vehicle: car4)
         }
+        catch CustomException.invalidEmail{
+            
+        }
+        catch CustomException.invalidNumber{
+            
+        }
+        catch {
+            print("Exception Occurred")
+        }
 
         do
         {
@@ -141,6 +177,15 @@ class DataRepository
             o5.addVehicleOwned(id: o5.id, vehicle: b5)
             o5.addVehicleOwned(id: o5.id, vehicle: m5)
             o5.addVehicleOwned(id: o5.id, vehicle: car5)
+        }
+        catch CustomException.invalidEmail{
+            
+        }
+        catch CustomException.invalidNumber{
+            
+        }
+        catch {
+            print("Exception Occurred")
         }
 
     }
@@ -157,9 +202,14 @@ class DataRepository
             c1.addVehicleListRented(vehicleRented: vr6, vehicleIdentificationNumber: vr6.vehicle.vehicleIdentificationNumber)
             addCustomer(customer: c1)
         }
-        catch
-        {
-            print("Error in creating Customer c1")
+        catch CustomException.invalidEmail{
+            
+        }
+        catch CustomException.invalidNumber{
+            
+        }
+        catch {
+            print("Exception Occurred")
         }
         
         do{
@@ -168,9 +218,14 @@ class DataRepository
             c2.addVehicleListRented(vehicleRented: vr10, vehicleIdentificationNumber: vr10.vehicle.vehicleIdentificationNumber)
             addCustomer(customer: c2)
         }
-        catch
-        {
-            print("Error in creating Customer c2")
+        catch CustomException.invalidEmail{
+            
+        }
+        catch CustomException.invalidNumber{
+            
+        }
+        catch {
+            print("Exception Occurred")
         }
 
         do{
@@ -180,9 +235,14 @@ class DataRepository
             c3.addVehicleListRented(vehicleRented: vr7, vehicleIdentificationNumber: vr7.vehicle.vehicleIdentificationNumber)
             addCustomer(customer: c3)
         }
-        catch
-        {
-            print("Error in creating Customer c3")
+        catch CustomException.invalidEmail{
+            
+        }
+        catch CustomException.invalidNumber{
+            
+        }
+        catch {
+            print("Exception Occurred")
         }
 
         do{
@@ -190,18 +250,28 @@ class DataRepository
             c4.addVehicleListRented(vehicleRented: vr11, vehicleIdentificationNumber: vr11.vehicle.vehicleIdentificationNumber)
             addCustomer(customer: c4)
         }
-        catch
-        {
-            print("Error in creating Customer c4")
+        catch CustomException.invalidEmail{
+            
+        }
+        catch CustomException.invalidNumber{
+            
+        }
+        catch {
+            print("Exception Occurred")
         }
         
         do{
             let c5 =  try Customer(id: "C005", firstName: "Valaria", lastName: "Fitzer", gender: .Female, mobileNumber: "6472589634", birthDate: Date.from(year: 1993, month: 12, day: 24)!, emailID: "valaria@gmail.com", userName: "Valaria_@34", password: "valaria89", address: "303,Darcel Avenue", city: "Oakville")
             addCustomer(customer: c5)
         }
-        catch
-        {
-            print("Error in creating Customer c5")
+        catch CustomException.invalidEmail{
+            
+        }
+        catch CustomException.invalidNumber{
+            
+        }
+        catch {
+            print("Exception Occurred")
         }
 
     }
