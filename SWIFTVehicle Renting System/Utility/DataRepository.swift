@@ -27,10 +27,28 @@ class DataRepository
         do{
             let d1 = try Driver(id: "D001", firstName: "Zora", lastName: "Ferris", gender: .Female, mobileNumber: "4796672909", birthDate: Date.from(year: 1998, month: 07, day: 05)!, emailID: "zferris0@disqus.com", userName: "zferris0", password: "EAtVnCuCe6Us", drivingLicenceNumber: "nzQq2Tx5g5HE", isHistroyCleared: true, salary: 127.62)
         }
+        catch CustomException.invalidEmail{
+            
+        }
+        catch CustomException.invalidNumber{
+            
+        }
+        catch {
+            print("Exception Occurred")
+        }
 
         do
         {
             let d2 = try Driver(id: "D002", firstName: "Appolonia", lastName: "Cattroll", gender: .Female, mobileNumber: "8983450523", birthDate: Date.from(year: 1995, month: 11, day: 19)!, emailID: "acattroll1@psu.edu", userName: "acattroll1", password: "x9e6xnkMpBr3", drivingLicenceNumber: "NfL6HThI", isHistroyCleared: true, salary: 179.17)
+        }
+        catch CustomException.invalidEmail{
+            
+        }
+        catch CustomException.invalidNumber{
+            
+        }
+        catch {
+            print("Exception Occurred")
         }
 
         do

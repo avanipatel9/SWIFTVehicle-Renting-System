@@ -7,7 +7,7 @@
 //
 
 import Foundation
-enum CustomerError:Error
+enum CustomException:Error
 {
     case invalidEmail,invalidNumber
 }

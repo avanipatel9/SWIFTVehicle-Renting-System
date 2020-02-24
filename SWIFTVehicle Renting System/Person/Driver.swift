@@ -22,7 +22,7 @@ class Driver:Person//, Codable
     
     var birthDate: Date?
     
-    var emailID: String
+    var emailID: String?
     
     var userName: String
     
@@ -43,9 +43,27 @@ class Driver:Person//, Codable
         self.firstName = firstName
         self.lastName = lastName
         self.gender = gender
-        self.mobileNumber = mobileNumber
+        if mobileNumber.count != 10
+        {
+          print("Invalid Mobile Number \(mobileNumber) : Cannot be less than 10 digits")
+            throw  CustomException.invalidNumber
+            
+        }
+        self.mobileNumber=mobileNumber
+        //self.mobileNumber = mobileNumber
         self.birthDate = birthDate
-        self.emailID = emailID
+        if isEmailValid(email: emailID)
+           {
+              
+               self.emailID=emailID
+           }
+            else
+            {
+                print("Invalid Email ID for \(self.firstName) : \(emailID) ")
+                throw CustomException.invalidEmail
+        
+            }
+        //self.emailID = emailID
         self.userName = userName
         self.password = password
         //self.age = Calendar.current.dateComponents([.year], from: birthDate,to: Date()).year!
@@ -54,13 +72,20 @@ class Driver:Person//, Codable
         self.salary = salary
     }
     
+    func isEmailValid(email:String)  -> Bool {
+        let emailRegEx = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,64}"
+        
+        let emailTest = NSPredicate(format:"SELF MATCHES %@", emailRegEx)
+        return emailTest.evaluate(with: email)
+    }
+    
     func Display() {
         print("First Name : \(self.firstName)")
         print("Last Name: \(self.lastName)")
         print("Gender : \(self.gender)")
         print("Mobile Number : \(self.mobileNumber)")
         print("BirthDate : \(self.birthDate!.getForamttedDate())")
-        print("Emaild ID : \(self.emailID)")
+        print("Emaild ID : \(self.emailID ?? "nil")")
         print("User Name : \(self.userName)")
         //Add extension for password encrypt decrypt
         print("Password Encrypted : \(self.password)")
