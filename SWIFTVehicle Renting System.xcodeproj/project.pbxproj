@@ -26,6 +26,7 @@
 		9B6498B623FE057B00975EE6 /* Bus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B6498B423FE057B00975EE6 /* Bus.swift */; };
 		9B6498B723FE057B00975EE6 /* IDisplay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B6498B523FE057B00975EE6 /* IDisplay.swift */; };
 		9BDEEF9E23F4B8E5004781B1 /* Owner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BDEEF9D23F4B8E5004781B1 /* Owner.swift */; };
+		9BFC928A2404849D00E0B720 /* CustomException.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BFC92892404849D00E0B720 /* CustomException.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -73,6 +74,7 @@
 		9B6498B423FE057B00975EE6 /* Bus.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Bus.swift; sourceTree = "<group>"; };
 		9B6498B523FE057B00975EE6 /* IDisplay.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IDisplay.swift; sourceTree = "<group>"; };
 		9BDEEF9D23F4B8E5004781B1 /* Owner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Owner.swift; sourceTree = "<group>"; };
+		9BFC92892404849D00E0B720 /* CustomException.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomException.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -146,6 +148,7 @@
 				472764F223FF597A005EE1C3 /* Date+Extension.swift */,
 				472764F023FF45A9005EE1C3 /* String+Extension.swift */,
 				47378C63240231FD00897CC5 /* Int+Extension.swift */,
+				9BFC92892404849D00E0B720 /* CustomException.swift */,
 			);
 			path = Utility;
 			sourceTree = "<group>";
@@ -222,6 +225,7 @@
 				9B1BFAFF2400ACCC0059E84C /* Double+extension.swift in Sources */,
 				47378C64240231FD00897CC5 /* Int+Extension.swift in Sources */,
 				9B14801023F4E07200D5FCC2 /* Person.swift in Sources */,
+				9BFC928A2404849D00E0B720 /* CustomException.swift in Sources */,
 				9B14801223F4E0EB00D5FCC2 /* Driver.swift in Sources */,
 				472764F323FF597A005EE1C3 /* Date+Extension.swift in Sources */,
 				47409B2623F3A01F00A9EBE2 /* Vehicle.swift in Sources */,
