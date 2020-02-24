@@ -37,7 +37,7 @@ struct VehicleRent:IDisplay//, Codable
     func Display()
     {
         self.vehicle.Display()
-        print("-----------------------------------------------")
+        print(" \n \t ***Rent Details: ")
         print("\t \t Rent Start Date : \(self.startDate!.getForamttedDate())")
         print("\t \t Rent End Date : \(self.endDate!.getForamttedDate())")
         print("\t \t No. of days to rent : \(noOfDaysRented.days())")

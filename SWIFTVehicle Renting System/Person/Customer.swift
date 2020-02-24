@@ -99,7 +99,8 @@ class Customer: Person//, Codable
     
     func Display()
     {
-        print("---------Customer----------")
+        print("\n \n ***************** Customer Details ************************ \n")
+        print("---------Customer with Vehicle List----------\n")
         print("First Name : \(self.firstName)")
         print("Last Name: \(self.lastName)")
         print("Gender : \(self.gender)")
@@ -116,7 +117,7 @@ class Customer: Person//, Codable
         {
             for vehicle in vehicleListRented
             {
-                print("-----------------------------------------------")
+                print("\n---------Vehicle List Rented by \(firstName) -------------\n")
                 vehicle.value.Display()
             }
         }
