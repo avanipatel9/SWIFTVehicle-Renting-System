@@ -50,7 +50,7 @@ class Owner:Person//, Codable
         self.gender = gender
         if mobileNumber.count != 10
         {
-          print("Invalid Mobile Number \(mobileNumber) : Cannot be less than 10 digits")
+          print("Name :- \(firstName) has Invalid Mobile Number \(mobileNumber) : Cannot be less than 10 digits")
             throw  CustomException.invalidNumber
             
         }
