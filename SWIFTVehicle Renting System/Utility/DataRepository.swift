@@ -55,15 +55,42 @@ class DataRepository
         {
             let d3 = try Driver(id: "D003", firstName: "Vernice", lastName: "McGougan", gender: .Female, mobileNumber: "4264923681", birthDate: Date.from(year: 1996, month: 09, day: 03)!, emailID: "vmcgougan2@umn.edu", userName: "vmcgougan2", password: "RE5IOBcVm", drivingLicenceNumber: "xxLTfp9", isHistroyCleared: true, salary: 147.80)
         }
+        catch CustomException.invalidEmail{
+            
+        }
+        catch CustomException.invalidNumber{
+            
+        }
+        catch {
+            print("Exception Occurred")
+        }
 
         do
         {
             let d4 = try Driver(id: "D004", firstName: "Quinn", lastName: "Popple", gender: .Female, mobileNumber: "9566019213", birthDate: Date.from(year: 1999, month: 10, day: 12)!, emailID: "qpopple3@google.fr", userName: "qpopple3", password: "B9luyIYcUh", drivingLicenceNumber: "dTKgyU6SD52", isHistroyCleared: true, salary: 169.15)
         }
+        catch CustomException.invalidEmail{
+            
+        }
+        catch CustomException.invalidNumber{
+            
+        }
+        catch {
+            print("Exception Occurred")
+        }
 
         do
         {
             let d5 = try Driver(id: "D005", firstName: "Samara", lastName: "Davenell", gender: .Female, mobileNumber: "9001558799", birthDate: Date.from(year: 1972, month: 11, day: 27)!, emailID: "sdavenell4@mlb.com", userName: "sdavenell4", password: "FZdE2ZnFVMb", drivingLicenceNumber: "HdGB1xhqPzGs", isHistroyCleared: false, salary: 177.47)
+        }
+        catch CustomException.invalidEmail{
+            
+        }
+        catch CustomException.invalidNumber{
+            
+        }
+        catch {
+            print("Exception Occurred")
         }
     }
     
