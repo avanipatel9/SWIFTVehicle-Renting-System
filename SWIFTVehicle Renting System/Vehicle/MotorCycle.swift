@@ -67,6 +67,13 @@ class MotorCycle : Vehicle//, Codable
         print("\t VehicleIdentificationNumber : \(self.vehicleIdentificationNumber)")
         print("\t Vehile Description : \(self.vehicleDescription)")
         print("\t Manufacturer Name : \(self.manufacturerName)")
+        print("\t Number of seats : \(self.numberOfSeat)")
+        print("\t Fuel Type : \(self.fuelType)")
+        //print("\t Is Vehicle Rented : \(self.isVehicleRented)")
+        print("\t Rate/Day : \(self.ratePerDay.rawValue.currency())")
+        print("\t Rate/KM : \(self.ratePerKm.rawValue.currency())")
+        print("\t Max Top Speed : \(self.maxTopSpeed)")
+        print("\t Milage : \(self.milage)")
         if self.isSelfDrive==false
         {
             print("\t is self Drive : No")
@@ -76,13 +83,6 @@ class MotorCycle : Vehicle//, Codable
         {
             print("\t is self Drive : Yes")
         }
-        print("\t Number of seats : \(self.numberOfSeat)")
-        print("\t Fuel Type : \(self.fuelType)")
-        //print("\t Is Vehicle Rented : \(self.isVehicleRented)")
-        print("\t Rate/Day : \(self.ratePerDay.rawValue.currency())")
-        print("\t Rate/KM : \(self.ratePerKm.rawValue.currency())")
-        print("\t Max Top Speed : \(self.maxTopSpeed)")
-        print("\t Milage : \(self.milage)")
         
     }
 }

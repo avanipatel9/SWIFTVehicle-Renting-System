@@ -68,6 +68,13 @@ class Car: Vehicle//, Codable
         print("\t VehicleIdentificationNumber : \(self.vehicleIdentificationNumber)")
         print("\t Vehile Description : \(self.vehicleDescription)")
         print("\t Manufacturer Name : \(self.manufacturerName)")
+        print("\t Number of seats : \(self.numberOfSeat)")
+        print("\t Fuel Type : \(self.fuelType)")
+        //print("\t Is Vehicle Rented : \(self.isVehicleRented)")
+        print("\t Rate/Day : \(self.ratePerDay.rawValue.currency())")
+        print("\t Rate/KM : \(self.ratePerKm.rawValue.currency())")
+        print("\t Car Type : \(self.carType)")
+        print("\t Car Color : \(self.carColor)")
         if self.isSelfDrive==false
         {
             print("\t is self Drive : No")
@@ -77,12 +84,5 @@ class Car: Vehicle//, Codable
         {
             print("\t is self Drive : Yes")
         }
-        print("\t Number of seats : \(self.numberOfSeat)")
-        print("\t Fuel Type : \(self.fuelType)")
-        //print("\t Is Vehicle Rented : \(self.isVehicleRented)")
-        print("\t Rate/Day : \(self.ratePerDay.rawValue.currency())")
-        print("\t Rate/KM : \(self.ratePerKm.rawValue.currency())")
-        print("\t Car Type : \(self.carType)")
-        print("\t Car Color : \(self.carColor)")
     }
 }
