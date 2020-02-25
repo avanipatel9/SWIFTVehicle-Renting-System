@@ -95,8 +95,6 @@ class Customer: Person//, Codable
         vehicleListRented.removeValue(forKey: vehicleIdentificationNumber)
     }
     
-    
-    
     func Display()
     {
         print("\n \n ***************** Customer Details ************************ \n")
@@ -115,11 +113,16 @@ class Customer: Person//, Codable
         
         if vehicleListRented.count != 0
         {
+            var grandTotal = 0.0
             for vehicle in vehicleListRented
             {
                 print("\n---------Vehicle List Rented by \(firstName) -------------\n")
                 vehicle.value.Display()
+                grandTotal = grandTotal + vehicle.value.totalBillToPay
             }
+            print("-----------------------------------------------")
+            print("\t \t Grand Total Bill : \(grandTotal)")
+            print("-----------------------------------------------")
         }
         else
         {
