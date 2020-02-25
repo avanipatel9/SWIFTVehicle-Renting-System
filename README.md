@@ -16,3 +16,7 @@ Members:
 References:
 
 * https://stackoverflow.com/questions/24097826/read-and-write-a-string-from-text-file
+
+* https://stackoverflow.com/questions/43108563/log-to-both-xcode-console-and-file
+
+
