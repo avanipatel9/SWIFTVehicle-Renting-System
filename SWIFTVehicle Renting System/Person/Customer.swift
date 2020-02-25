@@ -107,7 +107,7 @@ class Customer: Person//, Codable
         print("Emaild ID : \(self.emailID ?? "nil")")
         print("User Name : \(self.userName)")
         //Add extension for password encrypt decrypt
-        print("Password Encrypted : \(self.password)")
+        print("Password Encrypted : \(self.password.encryptpass(password: password))")
         print("Password Decrypted : \(self.password)")
         print("Age : \(self.age!)")
         
