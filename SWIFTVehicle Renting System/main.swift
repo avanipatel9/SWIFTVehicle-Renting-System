@@ -190,7 +190,7 @@ let vr9 = VehicleRent(startDate: Date.from(year: 2019, month: 09, day: 03)!, end
 let vr10 = VehicleRent(startDate: Date.from(year: 2018, month: 10, day: 25)!, endDate: Date.from(year: 2018, month: 10, day: 27)!, vechile: b4, noOfKmDrived: 2000.0)
 let vr11 = VehicleRent(startDate: Date.from(year: 2017, month: 11, day: 17)!, endDate: Date.from(year: 2017, month: 11, day: 19)!, vechile: b5, noOfKmDrived: 1500.0)
 
-func logToFile() {
+func logOutputToTextFile() {
   var paths = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true)
   let documentsDirectory = paths[0]
   let fileName = "output_vehicle_renting_system.txt"
@@ -201,7 +201,7 @@ func logToFile() {
   freopen(logFilePath.cString(using: String.Encoding.ascii)!, "a+", stdout)
 }
 
-logToFile()
+logOutputToTextFile()
 
 //create Driver
 //dr.createDrivers()
