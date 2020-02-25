@@ -70,7 +70,7 @@ class Bus:Vehicle//, Codable
     
     func Display()
     {
-        print("******* Vehicle Type : Bus ******* \n")
+        print("******* Vehicle Type : 🚌 Bus ******* \n")
         //print("-----------------------------------------------")
         print("\t VehicleIdentificationNumber : \(self.vehicleIdentificationNumber)")
         print("\t Vehile Description : \(self.vehicleDescription)")
