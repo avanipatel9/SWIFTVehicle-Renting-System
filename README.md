@@ -19,4 +19,8 @@ References:
 
 * https://stackoverflow.com/questions/43108563/log-to-both-xcode-console-and-file
 
+* https://developer.apple.com/documentation/foundation/nsstring/1407654-write
+
+* https://cocoacasts.com/what-is-a-singleton-and-how-to-create-one-in-swift
+
 
