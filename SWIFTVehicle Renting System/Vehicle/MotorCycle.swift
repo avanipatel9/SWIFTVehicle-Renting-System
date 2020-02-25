@@ -62,7 +62,7 @@ class MotorCycle : Vehicle//, Codable
     
     func Display()
     {
-        print("-----------Vehicle Type : Motorcycle ------------")
+        print("-----------Vehicle Type : 🏍 Motorcycle ------------")
         print("-----------------------------------------------")
         print("\t VehicleIdentificationNumber : \(self.vehicleIdentificationNumber)")
         print("\t Vehile Description : \(self.vehicleDescription)")
