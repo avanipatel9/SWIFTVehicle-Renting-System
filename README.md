@@ -23,4 +23,4 @@ References:
 
 * https://cocoacasts.com/what-is-a-singleton-and-how-to-create-one-in-swift
 
-
+* https://docs.swift.org/swift-book/LanguageGuide/TheBasics.html
